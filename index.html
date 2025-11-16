@@ -52,7 +52,6 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
-<<<<<<< HEAD
         function loadGoogleMapsScript() {
             console.log('[DEBUG] 1. loadGoogleMapsScript() called.');
             
@@ -78,16 +77,6 @@
             console.log('[DEBUG] 2. Google Maps script tag added to <head>. Waiting for callback...');
         }
 
-=======
-        function loadGoogleMapsScript() {
-            const script = document.createElement('script');
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap`;
-            script.async = true;
-            script.defer = true;
-            document.head.appendChild(script);
-        }
-
->>>>>>> 8300cfd4e16e72914295ce1d1d3f61a3c51a336a
         function initMap() {
             console.log('[DEBUG] 3. initMap() has been called by Google Maps API. Success!');
 
