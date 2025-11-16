@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lək̓ʷaŋən Təŋəxʷ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lək̓ʷaŋən Təŋəxʷ</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -15,13 +16,15 @@
 
     <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
 
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async&key=AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U"
+
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: "BC Sans", Helvetica, Arial, sans-serif;
         }
         #map {
             height: 100%;
@@ -48,77 +51,49 @@
     <div id="info-box">Loading map...</div>
 
     <script>
-        const googleApiKey = 'AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U';
+        const googleApiKey = '';
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
-
+/*
         function loadGoogleMapsScript() {
-            console.log('[DEBUG] 1. loadGoogleMapsScript() called.');
-            
             const script = document.createElement('script');
-            script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap`;
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap&loading=async`;
             script.async = true;
             script.defer = true;
 
-            script.onerror = function(e) {
-                console.error('--- GOOGLE MAPS SCRIPT FAILED TO LOAD ---');
-                console.error('This is the most common error. Check the following:');
-                console.error('1. API Key: Is it correct?');
-                console.error('2. API Enabled: Is "Maps JavaScript API" enabled in your Google Cloud project?');
-                console.error('3. Referrer Restrictions: Did you add your GitHub Pages URL (e.g., "your-username.github.io/*") to the allowed referrers?');
-                console.error('4. Billing: Is billing enabled for your project? (Required by Google)');
-                console.error('Original error event:', e);
-                infoBox.textContent = 'Error: Failed to load Google Maps script. See console for details.';
-                infoBox.style.backgroundColor = '#FFDDDD';
-            };
-
             document.head.appendChild(script);
-
-            console.log('[DEBUG] 2. Google Maps script tag added to <head>. Waiting for callback...');
         }
-
+*/
         function initMap() {
-            console.log('[DEBUG] 3. initMap() has been called by Google Maps API. Success!');
-
             const infoBox = document.getElementById('info-box');
             infoBox.textContent = 'Loading GeoJSON data...';
             
              try {
-                console.log('[DEBUG] 4. Creating Leaflet map instance...');
                 map = L.map('map', {
-                    center: [40.7128, -74.0060], // New York City
+                    center: [48.428333, -123.364722],
                     zoom: 10
                 });
-                console.log('[DEBUG] 5. Leaflet map created.');
-
-                console.log('[DEBUG] 6. Adding Google Satellite (Mutant) layer...');
+                
                 const satelliteLayer = L.gridLayer.googleMutant({
                     type: 'satellite',
                     continuousWorld: false,
                     opacity: 1.0
                 }).addTo(map);
-                console.log('[DEBUG] 7. Google Satellite layer added.');
 
                 map.attributionControl.addAttribution('Map data &copy; Google');
                 
-                // Now, load the GeoJSON data
                 loadGeoJSON();
-
             } catch (error) {
-                console.error('[DEBUG] ERROR during map initialization (initMap):', error);
+                console.error('ERROR during map initialization (initMap):', error);
                 infoBox.textContent = 'Error initializing map. See console.';
                 infoBox.style.backgroundColor = '#FFDDDD';
             }
         }
 
         async function loadGeoJSON() {
-            console.log('[DEBUG] 8. loadGeoJSON() called.');
-
             const infoBox = document.getElementById('info-box');
 
             try {
-                console.log(`[DEBUG] 9. Fetching GeoJSON from: ${geojsonUrl}`);
-
                 const response = await fetch(geojsonUrl);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -128,9 +103,8 @@
                 // Successfully fetched data, now add it to the map
                 const geoJsonLayer = L.geoJSON(data, {
                     style: function(feature) {
-                        // Style polygons
                         return {
-                            color: "#ff7800", // Orange outline
+                            color: "#ff7800", // Orange
                             weight: 3,
                             opacity: 0.8,
                             fillColor: "#ff7800",
@@ -139,28 +113,21 @@
                     },
                     
                     onEachFeature: function(feature, layer) {
-                        // Check if the feature has properties and a 'name'
                         if (feature.properties && feature.properties.name) {
-                            // Add a popup that shows the 'name' property
                             layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
                         } else {
                             layer.bindPopup("A GeoJSON feature");
                         }
                     }
                 }).addTo(map);
-                console.log('[DEBUG] 11. GeoJSON layer added to map.');
-                
-                // Get the boundaries of the loaded GeoJSON layer
                 const bounds = geoJsonLayer.getBounds();
                 
-                // Check if the bounds are valid (i.e., data was loaded)
                 if (bounds.isValid()) {
                     map.fitBounds(bounds, { padding: [20, 20] });
                     infoBox.textContent = 'Data loaded successfully!';
-                    console.log('[DEBUG] 12. Map fitted to GeoJSON bounds.');
                 } else {
                     infoBox.textContent = 'Data loaded, but no valid bounds found.';
-                    console.warn('[DEBUG] GeoJSON data loaded, but bounds are not valid.');
+                    console.warn('GeoJSON data loaded, but bounds are not valid.');
                 }
                 
                 // Hide the info box after a few seconds
@@ -175,7 +142,7 @@
             }
         }
 
-        loadGoogleMapsScript();
+        //loadGoogleMapsScript();
     </script>
 </body>
 </html>
