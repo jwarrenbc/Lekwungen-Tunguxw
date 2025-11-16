@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
          crossorigin=""></script>     
+
     <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
 
     <style>
@@ -51,6 +52,33 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
+<<<<<<< HEAD
+        function loadGoogleMapsScript() {
+            console.log('[DEBUG] 1. loadGoogleMapsScript() called.');
+            
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+
+            script.onerror = function(e) {
+                console.error('--- GOOGLE MAPS SCRIPT FAILED TO LOAD ---');
+                console.error('This is the most common error. Check the following:');
+                console.error('1. API Key: Is it correct?');
+                console.error('2. API Enabled: Is "Maps JavaScript API" enabled in your Google Cloud project?');
+                console.error('3. Referrer Restrictions: Did you add your GitHub Pages URL (e.g., "your-username.github.io/*") to the allowed referrers?');
+                console.error('4. Billing: Is billing enabled for your project? (Required by Google)');
+                console.error('Original error event:', e);
+                infoBox.textContent = 'Error: Failed to load Google Maps script. See console for details.';
+                infoBox.style.backgroundColor = '#FFDDDD';
+            };
+
+            document.head.appendChild(script);
+
+            console.log('[DEBUG] 2. Google Maps script tag added to <head>. Waiting for callback...');
+        }
+
+=======
         function loadGoogleMapsScript() {
             const script = document.createElement('script');
             script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap`;
@@ -59,44 +87,49 @@
             document.head.appendChild(script);
         }
 
+>>>>>>> 8300cfd4e16e72914295ce1d1d3f61a3c51a336a
         function initMap() {
+            console.log('[DEBUG] 3. initMap() has been called by Google Maps API. Success!');
+
             const infoBox = document.getElementById('info-box');
             infoBox.textContent = 'Loading GeoJSON data...';
             
-            // Create the Leaflet map instance
-            map = L.map('map', {
-                // Set a default view (latitude, longitude, zoom level)
-                // This will be overridden by the GeoJSON data if it loads successfully
-                center: [40.7128, -74.0060], // New York City
-                zoom: 10
-            });
+             try {
+                console.log('[DEBUG] 4. Creating Leaflet map instance...');
+                map = L.map('map', {
+                    center: [40.7128, -74.0060], // New York City
+                    zoom: 10
+                });
+                console.log('[DEBUG] 5. Leaflet map created.');
 
-            // Add Google's satellite tiles
-            // 'satellite' can be 'roadmap', 'terrain', or 'hybrid'
-            try {
+                console.log('[DEBUG] 6. Adding Google Satellite (Mutant) layer...');
                 const satelliteLayer = L.gridLayer.googleMutant({
                     type: 'satellite',
-                    continuousWorld: false, // Optional
+                    continuousWorld: false,
                     opacity: 1.0
                 }).addTo(map);
+                console.log('[DEBUG] 7. Google Satellite layer added.');
 
-                // Add a simple attribution control
                 map.attributionControl.addAttribution('Map data &copy; Google');
                 
                 // Now, load the GeoJSON data
                 loadGeoJSON();
 
             } catch (error) {
-                console.error("Error loading Google Maps tiles:", error);
-                infoBox.textContent = 'Error: Could not load Google Maps tiles. Check API key.';
-                infoBox.style.backgroundColor = '#FFDDDD'; // Error color
+                console.error('[DEBUG] ERROR during map initialization (initMap):', error);
+                infoBox.textContent = 'Error initializing map. See console.';
+                infoBox.style.backgroundColor = '#FFDDDD';
             }
         }
 
         async function loadGeoJSON() {
+            console.log('[DEBUG] 8. loadGeoJSON() called.');
+
             const infoBox = document.getElementById('info-box');
 
             try {
+                console.log(`[DEBUG] 9. Fetching GeoJSON from: ${geojsonUrl}`);
+
                 const response = await fetch(geojsonUrl);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -126,17 +159,19 @@
                         }
                     }
                 }).addTo(map);
+                console.log('[DEBUG] 11. GeoJSON layer added to map.');
                 
                 // Get the boundaries of the loaded GeoJSON layer
                 const bounds = geoJsonLayer.getBounds();
                 
                 // Check if the bounds are valid (i.e., data was loaded)
                 if (bounds.isValid()) {
-                    // Fit the map view to the bounds of the GeoJSON data
-                    map.fitBounds(bounds, { padding: [20, 20] }); // Add 20px padding
+                    map.fitBounds(bounds, { padding: [20, 20] });
                     infoBox.textContent = 'Data loaded successfully!';
+                    console.log('[DEBUG] 12. Map fitted to GeoJSON bounds.');
                 } else {
                     infoBox.textContent = 'Data loaded, but no valid bounds found.';
+                    console.warn('[DEBUG] GeoJSON data loaded, but bounds are not valid.');
                 }
                 
                 // Hide the info box after a few seconds
@@ -150,7 +185,8 @@
                 infoBox.style.backgroundColor = '#FFDDDD';
             }
         }
-    </script>
 
+        loadGoogleMapsScript();
+    </script>
 </body>
 </html>
