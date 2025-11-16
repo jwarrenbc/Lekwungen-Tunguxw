@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
          crossorigin="" />
-    
-    <script>
-        const googleApiKey = 'AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U';
-    </script>
-    
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=" + googleApiKey + "&callback=initMap">
-    </script>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
@@ -55,8 +47,17 @@
     <div id="info-box">Loading map...</div>
 
     <script>
+        const googleApiKey = 'AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U';
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
+
+        function loadGoogleMapsScript() {
+            const script = document.createElement('script');
+            script.src = `https://maps.googleapis.com/maps/api/js?key=${googleApiKey}&callback=initMap`;
+            script.async = true;
+            script.defer = true;
+            document.head.appendChild(script);
+        }
 
         function initMap() {
             const infoBox = document.getElementById('info-box');
