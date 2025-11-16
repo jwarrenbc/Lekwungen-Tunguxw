@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lək̓ʷaŋən Təŋəxʷ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhSINSRcScbifucEAVFjSKMchUbRJCFJ+P7E="
+         crossorigin="" />
+    
+    <script>
+        const googleApiKey = 'AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U';
+    </script>
+    
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=" + googleApiKey + "&callback=initMap">
+    </script>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+         crossorigin=""></script>     
+    <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+            background-color: #333; /* Dark background while tiles load */
+        }
+        /* Simple info box for loading/error messages */
+        #info-box {
+            position: absolute;
+            top: 10px;
+            left: 50px; /* Standard Leaflet control position */
+            z-index: 800; /* Above map, below controls */
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <div id="info-box">Loading map...</div>
+
+    <script>
+        const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
+        let map;
+
+        function initMap() {
+            const infoBox = document.getElementById('info-box');
+            infoBox.textContent = 'Loading GeoJSON data...';
+            
+            // Create the Leaflet map instance
+            map = L.map('map', {
+                // Set a default view (latitude, longitude, zoom level)
+                // This will be overridden by the GeoJSON data if it loads successfully
+                center: [40.7128, -74.0060], // New York City
+                zoom: 10
+            });
+
+            // Add Google's satellite tiles
+            // 'satellite' can be 'roadmap', 'terrain', or 'hybrid'
+            try {
+                const satelliteLayer = L.gridLayer.googleMutant({
+                    type: 'satellite',
+                    continuousWorld: false, // Optional
+                    opacity: 1.0
+                }).addTo(map);
+
+                // Add a simple attribution control
+                map.attributionControl.addAttribution('Map data &copy; Google');
+                
+                // Now, load the GeoJSON data
+                loadGeoJSON();
+
+            } catch (error) {
+                console.error("Error loading Google Maps tiles:", error);
+                infoBox.textContent = 'Error: Could not load Google Maps tiles. Check API key.';
+                infoBox.style.backgroundColor = '#FFDDDD'; // Error color
+            }
+        }
+
+        async function loadGeoJSON() {
+            const infoBox = document.getElementById('info-box');
+
+            try {
+                const response = await fetch(geojsonUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                // Successfully fetched data, now add it to the map
+                const geoJsonLayer = L.geoJSON(data, {
+                    style: function(feature) {
+                        // Style polygons
+                        return {
+                            color: "#ff7800", // Orange outline
+                            weight: 3,
+                            opacity: 0.8,
+                            fillColor: "#ff7800",
+                            fillOpacity: 0.1
+                        };
+                    },
+                    
+                    onEachFeature: function(feature, layer) {
+                        // Check if the feature has properties and a 'name'
+                        if (feature.properties && feature.properties.name) {
+                            // Add a popup that shows the 'name' property
+                            layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
+                        } else {
+                            layer.bindPopup("A GeoJSON feature");
+                        }
+                    }
+                }).addTo(map);
+                
+                // Get the boundaries of the loaded GeoJSON layer
+                const bounds = geoJsonLayer.getBounds();
+                
+                // Check if the bounds are valid (i.e., data was loaded)
+                if (bounds.isValid()) {
+                    // Fit the map view to the bounds of the GeoJSON data
+                    map.fitBounds(bounds, { padding: [20, 20] }); // Add 20px padding
+                    infoBox.textContent = 'Data loaded successfully!';
+                } else {
+                    infoBox.textContent = 'Data loaded, but no valid bounds found.';
+                }
+                
+                // Hide the info box after a few seconds
+                setTimeout(() => {
+                    infoBox.style.display = 'none';
+                }, 3000);
+
+            } catch (error) {
+                console.error('Error fetching or parsing GeoJSON:', error);
+                infoBox.textContent = 'Error: Could not load GeoJSON data. Check URL and file format.';
+                infoBox.style.backgroundColor = '#FFDDDD';
+            }
+        }
+    </script>
+
+</body>
+</html>
