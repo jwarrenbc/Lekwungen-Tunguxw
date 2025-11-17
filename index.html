@@ -48,9 +48,8 @@
 
     <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@1.0.0/dist/Leaflet.GoogleMutant.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async&key=AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U"></script>
-
     <script>
+        const googleApiKey = 'AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U';
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
@@ -123,6 +122,37 @@
                 infoBox.style.backgroundColor = '#FFDDDD';
             }
         }
+
+        // Dynamically load the Google Maps script to avoid race conditions
+        function loadGoogleMapsScript() {
+            if (googleApiKey === 'YOUR_GOOGLE_MAPS_API_KEY_HERE') {
+                const infoBox = document.getElementById('info-box');
+                infoBox.textContent = 'ERROR: Please replace YOUR_GOOGLE_MAPS_API_KEY_HERE with your actual key.';
+                infoBox.style.backgroundColor = '#FFDDDD';
+                return;
+            }
+
+            const script = document.createElement('script');
+            // IMPORTANT: No callback parameter here. We use the onload event instead.
+            script.src = `https://maps.googleapis.com/maps/api/js?loading=async&key=${googleApiKey}`; 
+            script.async = true;
+            script.defer = true;
+            
+            script.onload = initMap; 
+            
+            // Add error handling in case the script fails to load (e.g., bad key, network issue)
+            script.onerror = function() {
+                const infoBox = document.getElementById('info-box');
+                console.error("Failed to load Google Maps script. Check network or API key restrictions.");
+                infoBox.textContent = 'Error: Google Maps script failed to load.';
+                infoBox.style.backgroundColor = '#FFDDDD';
+            };
+            
+            document.head.appendChild(script);
+        }
+
+        // Start the process by loading the Google Maps script
+        loadGoogleMapsScript();
     </script>
 </body>
 </html>
