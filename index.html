@@ -87,7 +87,7 @@
             try {
                 const response = await fetch(geojsonUrl);
                 if (!response.ok) {
-                    throw new Error('HTTP error! status: ${response.status}');
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 const data = await response.json();
 
@@ -98,7 +98,7 @@
                     },
                     onEachFeature: function(feature, layer) {
                         if (feature.properties && feature.properties.name) {
-                            layer.bindPopup('<strong>${feature.properties.name}</strong>');
+                            layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
                         } else {
                             layer.bindPopup("A GeoJSON feature");
                         }
