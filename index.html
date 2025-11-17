@@ -26,11 +26,13 @@
             width: 100%;
             font-family: "BC Sans", Helvetica, Arial, sans-serif;
         }
+        
         #map {
             height: 100%;
             width: 100%;
             background-color: #333; /* Dark background while tiles load */
         }
+
         /* Simple info box for loading/error messages */
         #info-box {
             position: absolute;
@@ -42,6 +44,29 @@
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.3);
             font-size: 14px;
+        }
+
+        .popup-content button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .popup-content h4 {
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        .popup-content ul {
+            padding-left: 20px;
+            margin-top: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -97,11 +122,46 @@
                         return !(feature.properties && feature.properties.category === "Douglas Treaties");
                     },
                     onEachFeature: function(feature, layer) {
-                        if (feature.properties && feature.properties.name) {
-                            layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
-                        } else {
-                            layer.bindPopup("A GeoJSON feature");
+                        const props = feature.properties;
+                        
+                        // Safely extract properties
+                        const lekwungenName = props?.name || 'Unknown';
+                        const settlerName = props?.['settler name'] || 'Not applicable';
+                        const audioUrl = props?.audio;
+                        const sources = props?.sources;
+
+                        // --- 1. Construct Source List HTML ---
+                        let sourcesHtml = '';
+                        if (Array.isArray(sources) && sources.length > 0) {
+                            const listItems = sources.map(source => `<li>${source}</li>`).join('');
+                            sourcesHtml = `
+                                <h4>Sources</h4>
+                                <ul>${listItems}</ul>
+                            `;
                         }
+
+                        // --- 2. Construct Audio Button HTML ---
+                        let audioButtonHtml = '';
+                        if (audioUrl) {
+                            // The onclick function creates a new Audio object and plays it.
+                            audioButtonHtml = `
+                                <button onclick="new Audio('${audioUrl}').play()">
+                                    ▶
+                                </button>
+                            `;
+                        }
+
+                        // --- 3. Construct Final Popup Content ---
+                        const popupContent = `
+                            <div class="popup-content">
+                                <h3>${lekwungenName}</h3>
+                                <p><strong>Settler Name:</strong> ${settlerName}</p>
+                                ${audioButtonHtml}
+                                ${sourcesHtml}
+                            </div>
+                        `;
+                        
+                        layer.bindPopup(popupContent);
                     }
                 }).addTo(map);
                 const bounds = geoJsonLayer.getBounds();
