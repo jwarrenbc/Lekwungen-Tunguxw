@@ -1,17 +1,13 @@
 {
     "type": "FeatureCollection",
-    "name": "Lkwangn Tngxw",
+    "name": "Lək̓ʷaŋən Təŋəxʷ",
     "features": [
         {
             "type": "Feature",
             "properties": {
-                "Name": "p̓əlác̓əs",
-                "Audio": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
-                "Sources": null,
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "name": "p̓əlác̓əs",
+                "audio": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
+                "sources": null
             },
             "geometry": {
                 "type": "Point",
@@ -24,12 +20,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "pšay̓",
-                "Sources": null,
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "name": "pšay̓",
+                "sources": null
             },
             "geometry": {
                 "type": "Point",
@@ -42,14 +34,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "mək̓ʷəqs",
-                "Sources": [
+                "name": "mək̓ʷəqs",
+                "sources": [
                     "https://fishing-app.gpsnauticalcharts.com/"
-                ],
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                ]
             },
             "geometry": {
                 "type": "Point",
@@ -62,15 +50,12 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": null,
-                "Settler name": "\"The Bay immediately east of Clover Point\"",
-                "Sources": [
+                "name": null,
+                "settler name": "\"The Bay immediately east of Clover Point\"",
+                "sources": [
                     "https://www.rcaanc-cirnac.gc.ca/eng/1100100029052/1581515763202#sweng"
                 ],
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "category": "Douglas Treaties"
             },
             "geometry": {
                 "type": "Point",
@@ -83,14 +68,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": null,
-                "Settler name": "\"Fountain Ridge\"",
-                "description": null,
-                "Sources": null,
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "name": null,
+                "settler name": "\"Fountain Ridge\"",
+                "sources": null,
+                "category": "Douglas Treaties"
             },
             "geometry": {
                 "type": "Point",
@@ -103,12 +84,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": null,
-                "Sources": null,
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "name": null,
+                "settler name": "Island of the Dead (Halkett Island)",
+                "sources": null
             },
             "geometry": {
                 "type": "Point",
@@ -121,15 +99,12 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": null,
-                "Settler name": "\"The head of the...Inlet of Camoson\"",
-                "Sources": [
+                "name": null,
+                "settler name": "\"The head of the...Inlet of Camoson\"",
+                "sources": [
                     "https://fishing-app.gpsnauticalcharts.com/"
                 ],
-                "acing": null,
-                "color": null,
-                "family": null,
-                "size": null
+                "category": "Douglas Treaties"
             },
             "geometry": {
                 "type": "Point",
@@ -142,11 +117,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Sxʷéŋxʷəŋ Təŋəxʷ",
-                "Sources": [
+                "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
+                "sources": [
                     "Lutz, John Sutton. Makuk: A new history of Aboriginal-white relations. UBC Press, 2009."
-                ],
-                "acing": null
+                ]
             },
             "geometry": {
                 "type": "Polygon",
