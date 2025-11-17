@@ -16,7 +16,7 @@
 
     <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@1.0.0/dist/Leaflet.GoogleMutant.js"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async&key=AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U"
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&loading=async&key=AIzaSyBB1fytz06At5xyMegjdPbWZumotf8S__U"></script>
 
     <style>
         html, body {
@@ -54,7 +54,7 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
-        function initMap() {
+        window.initMap = function() {
             const infoBox = document.getElementById('info-box');
             infoBox.textContent = 'Loading GeoJSON data...';
             
@@ -84,7 +84,9 @@
             const infoBox = document.getElementById('info-box');
 
             try {
-                const response = await fetch(geojsonUrl);
+                const cacheBusterUrl = `${geojsonUrl}?t=${Date.now()}`;
+                
+                const response = await fetch(cacheBusterUrl);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -92,16 +94,6 @@
 
                 // Successfully fetched data, now add it to the map
                 const geoJsonLayer = L.geoJSON(data, {
-                    style: function(feature) {
-                        return {
-                            color: "#ff7800", // Orange
-                            weight: 3,
-                            opacity: 0.8,
-                            fillColor: "#ff7800",
-                            fillOpacity: 0.1
-                        };
-                    },
-                    
                     onEachFeature: function(feature, layer) {
                         if (feature.properties && feature.properties.name) {
                             layer.bindPopup(`<strong>${feature.properties.name}</strong>`);
