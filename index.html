@@ -159,9 +159,9 @@
                         
                         // Safely extract properties
                         const lekwungenName = props?.name || 'Unknown';
-                        const settlerName = props?.['settler name'] || 'Not applicable';
-                        const audioUrl = props?.audio.src;
-                        const audioCopyright = props?.audio.copyright;
+                        const settlerName = props?.['settler name'] || 'None';
+                        const audioUrl = props?.audio?.src;
+                        const audioCopyright = props?.audio?.copyright;
                         const sources = props?.sources;
 
                         // --- 1. Construct Source List HTML ---
