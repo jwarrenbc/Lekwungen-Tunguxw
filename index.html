@@ -79,6 +79,39 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
+        function anglicize(originalName) {
+            if (!originalName || originalName === 'Unknown') return '';
+
+            // Standardize to lowercase for easier substitution
+            let name = originalName.toLowerCase();
+
+            name = name.replace(/u/g, "oo");
+            name = name.replace(/ə/g, "u");
+
+            name = name.replace(/c/g, "ts");
+            name = name.replace(/š/g, "sh");
+            name = name.replace(/č/g, "ch");
+            name = name.replace(/ŋ/g, "ng");
+            name = name.replace(/ʔ/g, "'");
+
+            name = name.replace(/ɬ/g, "lh");
+            name = name.replace(/xʷ/g, "hw");
+            name = name.replace(/x̣/g, "x");
+            name = name.replace(/x̣ʷ/g, "xw");
+            name = name.replace(/ʷ/g, "w");
+
+            name = name.replace(/p̓/g, "p'");
+            name = name.replace(/t̓/g, "t'");
+            name = name.replace(/k̓ʷ/g, "kw'");
+            name = name.replace(/q̓/g, "q'");
+            name = name.replace(/q̓ʷ/g, "qw'");
+            name = name.replace(/c̓/g, "ts'");
+            name = name.replace(/ƛ/g, "tl'");
+            name = name.replace(/t̓/g, "ch'");
+
+            return $name;
+        }
+
         function initMap() {
             const infoBox = document.getElementById('info-box');
             infoBox.textContent = 'Loading GeoJSON data...';
@@ -127,7 +160,8 @@
                         // Safely extract properties
                         const lekwungenName = props?.name || 'Unknown';
                         const settlerName = props?.['settler name'] || 'Not applicable';
-                        const audioUrl = props?.audio;
+                        const audioUrl = props?.audio.src;
+                        const audioCopyright = props?.audio.copyright;
                         const sources = props?.sources;
 
                         // --- 1. Construct Source List HTML ---
@@ -148,6 +182,7 @@
                                 <button onclick="new Audio('${audioUrl}').play()">
                                     ▶
                                 </button>
+                                <p>${audioCopyright}</p>
                             `;
                         }
 
@@ -155,6 +190,7 @@
                         const popupContent = `
                             <div class="popup-content">
                                 <h3>${lekwungenName}</h3>
+                                <p><strong>Pronounced like:</strong> ${anglicize(lekwungenName)}</p>
                                 <p><strong>Settler Name:</strong> ${settlerName}</p>
                                 ${audioButtonHtml}
                                 ${sourcesHtml}
