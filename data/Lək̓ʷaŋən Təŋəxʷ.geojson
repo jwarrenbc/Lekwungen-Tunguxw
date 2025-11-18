@@ -6,7 +6,10 @@
             "type": "Feature",
             "properties": {
                 "name": "p̓əlác̓əs",
-                "audio": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
+                "audio": {
+                    "src": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
+                    "copyright": "©2024 Elmer George"
+                },
                 "sources": null
             },
             "geometry": {
