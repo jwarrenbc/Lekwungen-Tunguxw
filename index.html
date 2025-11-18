@@ -85,6 +85,15 @@
             // Standardize to lowercase for easier substitution
             let name = originalName.toLowerCase();
 
+            // Decompose Unicode characters
+            name = name.normalize('NFD');
+
+            // U+0313 (Combining Comma Above) -> Apostrophe (') for ejectives
+            name = name.replace(/\u0313/g, "\'");
+
+            // U+02B7 (Modifier Letter Small W) -> 'w' for labialization
+            name = name.replace(/\u02B7/g, "w");
+
             name = name.replace(/u/g, "oo");
             name = name.replace(/ə/g, "u");
 
@@ -95,19 +104,9 @@
             name = name.replace(/ʔ/g, "'");
 
             name = name.replace(/ɬ/g, "lh");
-            name = name.replace(/xʷ/g, "hw");
+            name = name.replace(/x/g, "h");
             name = name.replace(/x̣/g, "x");
-            name = name.replace(/x̣ʷ/g, "xw");
-            name = name.replace(/ʷ/g, "w");
-
-            name = name.replace(/p̓/g, "p'");
-            name = name.replace(/t̓/g, "t'");
-            name = name.replace(/k̓ʷ/g, "kw'");
-            name = name.replace(/q̓/g, "q'");
-            name = name.replace(/q̓ʷ/g, "qw'");
-            name = name.replace(/c̓/g, "ts'");
-            name = name.replace(/ƛ/g, "tl'");
-            name = name.replace(/t̓/g, "ch'");
+            name = name.replace(/ƛ/g, "tl");
 
             return name;
         }
