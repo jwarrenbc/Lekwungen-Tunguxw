@@ -79,36 +79,48 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
-        function anglicize(originalName) {
-            if (!originalName || originalName === 'Unknown') return '';
+        function anglicize(original) {
+            if (!original || original === 'Unknown') return '';
 
-            // Standardize to lowercase for easier substitution
-            let name = originalName.toLowerCase();
+            const replacements = {
+                'u': "oo",
+                'ə': "u",
 
-            // Decompose Unicode characters
-            name = name.normalize('NFD');
+                'k̓ʷ': "kw'",
+                'q̓ʷ': "qw'",
 
-            // U+0313 (Combining Comma Above) -> Apostrophe (') for ejectives
-            name = name.replace(/\u0313/g, "\'");
+                'c̓': "ts'",
+                'č̓': "ch'",
+                'l̕': "l'",
+                'ƛ̕': "tl'",
+                'm̓': "m'",
+                'n̓': "n'",
+                'ŋ̓': "ng'",
+                'p̓': "p'",
+                'q̓': "q'",
+                't̕': "t'",
+                'w̓': "w'",
+                'y̓': "y'",
 
-            // U+02B7 (Modifier Letter Small W) -> 'w' for labialization
-            name = name.replace(/\u02B7/g, "w");
+                'kʷ': "kw",
+                'qʷ': "qw",
+                'xʷ': "hw",
+                'x̣ʷ': "xw",
 
-            name = name.replace(/u/g, "oo");
-            name = name.replace(/ə/g, "u");
+                'c': "ts",
+                'č': "ch",
+                'ŋ': "ng",
+                'š': "sh",
+                'ʔ': "'",
+                'ɬ': "lh",
+                'x': "h",
+                'x̣': "x",
+            };
+            const pattern = new RegExp(Object.keys(replacements).join('|'), 'gi');
 
-            name = name.replace(/c/g, "ts");
-            name = name.replace(/š/g, "sh");
-            name = name.replace(/č/g, "ch");
-            name = name.replace(/ŋ/g, "ng");
-            name = name.replace(/ʔ/g, "'");
-
-            name = name.replace(/ɬ/g, "lh");
-            name = name.replace(/x/g, "h");
-            name = name.replace(/x̣/g, "x");
-            name = name.replace(/ƛ/g, "tl");
-
-            return name;
+            original.replace(pattern, (match) => {
+                return replacements[match.toLowerCase()]; // Use .toLowerCase() if 'i' flag is used
+            });
         }
 
         function initMap() {
