@@ -117,8 +117,9 @@
             };
             const pattern = new RegExp(Object.keys(replacements).join('|'), 'gi');
 
+            word = word.toLowerCase();
             word = word.replace(pattern, (match) => {
-                return replacements[match.toLowerCase()]; // Use .toLowerCase() if 'i' flag is used
+                return replacements[match];
             });
 
             return word;
