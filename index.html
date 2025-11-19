@@ -6,13 +6,11 @@
 
     <title>Lək̓ʷaŋən Təŋəxʷ</title>
     
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-         crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" crossorigin="" />
 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-         crossorigin=""></script>     
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js" crossorigin=""></script>
 
     <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@latest/dist/Leaflet.GoogleMutant.js"></script>
 
@@ -25,61 +23,28 @@
             height: 100%;
             width: 100%;
             font-family: "BC Sans", Helvetica, Arial, sans-serif;
-            font-size: 100%;
-        }
-        
-        #map {
-            height: 100%;
-            width: 100%;
-            background-color: #333; /* Dark background while tiles load */
         }
 
-        /* Simple info box for loading/error messages */
-        #info-box {
-            position: absolute;
-            top: 10px;
-            left: 50px; /* Standard Leaflet control position */
-            z-index: 800; /* Above map, below controls */
-            background: white;
-            padding: 8px 12px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            font-size: 1.4rem;
+        /* Tailwind resets image max-width, which breaks Leaflet tiles. This fixes it. */
+        .leaflet-tile-pane img {
+            max-width: none !important; 
         }
-
-        .popup-content button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 8px 12px;
-            text-align: center;
-            text-decoration: none;
-            display: block;
-            font-size: 1rem;
-            margin: 0 auto; /* centre */
-            cursor: pointer;
-            border-radius: 4px;
+        /* Remove default styling from Leaflet popups to let Tailwind take over */
+        .leaflet-popup-content-wrapper {
+            padding: 0;
+            border-radius: 0.75rem; /* rounded-xl */
+            overflow: hidden;
         }
-        .popup-content h2 {
-            font-size: 2.7rem;
-        }
-        .popup-content h3 {
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            color: darkgrey;
-            margin-bottom: 5px;
-            margin-top: 10px;
-        }
-        .popup-content ul {
-            padding-left: 20px;
-            margin-top: 5px;
+        .leaflet-popup-content {
+            margin: 0;
+            width: 320px !important; /* Fixed width for consistency */
         }
     </style>
 </head>
 <body>
-    <div id="map"></div>
+    <div id="map" class="h-full w-full bg-[#333]"></div>
     
-    <div id="info-box">Loading map...</div>
+    <div id="info-box" class="absolute top-3 left-12 z-50 bg-white py-2 px-3 rounded-lg shadow-lg text-sm">Loading map...</div>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -183,35 +148,56 @@
                         const audioCopyright = props?.audio?.copyright;
                         const sources = props?.sources;
 
-                        // --- 1. Construct Source List HTML ---
-                        let sourcesHtml = '';
-                        if (Array.isArray(sources) && sources.length > 0) {
-                            const listItems = sources.map(source => `<li>${source}</li>`).join('');
-                            sourcesHtml = `
-                                <h3>📖 Sources</h3>
-                                <ul>${listItems}</ul>
+                        // --- 1. Construct Audio Button HTML ---
+                        let audioSectionHtml = '';
+                        if (audioUrl) {
+                            audioSectionHtml = `
+                                <div class="bg-amber-50 rounded-lg p-3 mb-3 border border-amber-100 text-center">
+                                    <button onclick="new Audio('${audioUrl}').play()" 
+                                            class="bg-yellow-700 hover:bg-yellow-800 text-white text-sm font-bold py-2 px-4 rounded-full inline-flex items-center transition-colors shadow-sm">
+                                        <span class="mr-2 text-lg">▶</span> Listen to Pronunciation
+                                    </button>
+                                    <div class="text-[10px] text-gray-400 mt-2">
+                                        Audio recording ${audioCopyright}
+                                    </div>
+                                </div>
                             `;
                         }
 
-                        // --- 2. Construct Audio Button HTML ---
-                        let audioButtonHtml = '';
-                        if (audioUrl) {
-                            // The onclick function creates a new Audio object and plays it.
-                            audioButtonHtml = `
-                                <p><button onclick="new Audio('${audioUrl}').play()">
-                                    ▶ Listen to Pronunciation
-                                </button>
-                                <small>Audio recording ${audioCopyright}</small></p>
+                        // --- 2. Construct Source List HTML ---
+                        let sourcesHtml = '';
+                        if (Array.isArray(sources) && sources.length > 0) {
+                            const listItems = sources.map(source => `<li class="mb-1">${source}</li>`).join('');
+                            sourcesHtml = `
+                                <div class="mt-4 mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                    <span class="mr-1 text-lg">📚</span> Sources
+                                </div>
+                                <ul class="list-disc pl-5 text-xs text-gray-600 leading-relaxed">
+                                    ${listItems}
+                                </ul>
                             `;
                         }
 
                         // --- 3. Construct Final Popup Content ---
-                        const popupContent = `
-                            <div class="popup-content">
-                                <h2>${lekwungenName}</h2>
-                                ${audioButtonHtml}
-                                <h3>🇬🇧 Settler Name</h3>
-                                <p><strong>${settlerName}</strong></p>
+                       const popupContent = `
+                            <!-- Header -->
+                            <div class="bg-[#8C7853] text-white p-4 flex items-start">
+                                <span class="text-2xl mr-3 mt-0.5">📍</span>
+                                <h3 class="text-xl font-bold leading-tight">${lekwungenName}</h3>
+                            </div>
+                            
+                            <!-- Body -->
+                            <div class="p-4 bg-white">
+                                ${audioSectionHtml}
+
+                                <!-- Settler Name -->
+                                <div class="mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                    <span class="mr-1 text-lg">🔠</span> Settler Name
+                                </div>
+                                <div class="text-base text-gray-800 pl-6 mb-2 font-medium">
+                                    ${settlerName}
+                                </div>
+
                                 ${sourcesHtml}
                             </div>
                         `;
@@ -229,7 +215,7 @@
                     console.warn('GeoJSON data loaded, but bounds are not valid.');
                 }
                 
-                // Hide the info box after a few seconds
+                // Hide the info box after a few seconds if there are no errors
                 setTimeout(() => {
                     infoBox.style.display = 'none';
                 }, 3000);
