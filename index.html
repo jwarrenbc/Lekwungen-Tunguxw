@@ -79,8 +79,8 @@
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/main/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
         let map;
 
-        function anglicize(original) {
-            if (!original || original === 'Unknown') return '';
+        function anglicize(word) {
+            if (!word || word === 'Unknown') return '';
 
             const replacements = {
                 'u': "oo",
@@ -118,9 +118,11 @@
             };
             const pattern = new RegExp(Object.keys(replacements).join('|'), 'gi');
 
-            original.replace(pattern, (match) => {
+            word.replace(pattern, (match) => {
                 return replacements[match.toLowerCase()]; // Use .toLowerCase() if 'i' flag is used
             });
+
+            return word;
         }
 
         function initMap() {
