@@ -83,9 +83,6 @@
             if (!word || word === 'Unknown') return '';
 
             const replacements = {
-                'u': "oo",
-                'ə': "u",
-
                 'k̓ʷ': "kw'",
                 'q̓ʷ': "qw'",
 
@@ -107,18 +104,20 @@
                 'xʷ': "hw",
                 'x̣ʷ': "xw",
 
-                'c': "ts",
                 'č': "ch",
-                'ŋ': "ng",
                 'š': "sh",
-                'ʔ': "'",
-                'ɬ': "lh",
-                'x': "h",
                 'x̣': "x",
+                'ɬ': "lh",
+                'ŋ': "ng",
+                'u': "oo",
+                'ə': "u",
+                'c': "ts",
+                'ʔ': "'",
+                'x': "h",
             };
             const pattern = new RegExp(Object.keys(replacements).join('|'), 'gi');
 
-            word.replace(pattern, (match) => {
+            word = word.replace(pattern, (match) => {
                 return replacements[match.toLowerCase()]; // Use .toLowerCase() if 'i' flag is used
             });
 
