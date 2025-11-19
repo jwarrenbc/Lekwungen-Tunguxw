@@ -59,7 +59,8 @@
             cursor: pointer;
             border-radius: 4px;
         }
-        .popup-content h4 {
+        .popup-content h3 {
+            text-transform: uppercase;
             margin-bottom: 5px;
             margin-top: 10px;
         }
@@ -182,7 +183,7 @@
                         if (Array.isArray(sources) && sources.length > 0) {
                             const listItems = sources.map(source => `<li>${source}</li>`).join('');
                             sourcesHtml = `
-                                <h4>Sources</h4>
+                                <h3>📖 Sources</h3>
                                 <ul>${listItems}</ul>
                             `;
                         }
@@ -192,20 +193,20 @@
                         if (audioUrl) {
                             // The onclick function creates a new Audio object and plays it.
                             audioButtonHtml = `
-                                <button onclick="new Audio('${audioUrl}').play()">
-                                    ▶
-                                </button>
-                                <p>${audioCopyright}</p>
+                                <p><button onclick="new Audio('${audioUrl}').play()">
+                                    ▶ Listen to Pronunciation
+                                </button></p>
+                                <p><small>Audio recording ${audioCopyright}. All rights reserved.</small></p>
                             `;
                         }
 
                         // --- 3. Construct Final Popup Content ---
                         const popupContent = `
                             <div class="popup-content">
-                                <h3>${lekwungenName}</h3>
-                                <p><strong>Pronounced like:</strong> ${anglicize(lekwungenName)}</p>
-                                <p><strong>Settler Name:</strong> ${settlerName}</p>
+                                <h2>${lekwungenName}</h2>
                                 ${audioButtonHtml}
+                                <h3>🇬🇧 Settler Name</h3>
+                                </p>${settlerName}</p>
                                 ${sourcesHtml}
                             </div>
                         `;
