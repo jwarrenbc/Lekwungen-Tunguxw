@@ -191,12 +191,10 @@
 
                         const encodedLekwungenName = encodeURIComponent(traditionalName);
                         const encodedSettlerName = encodeURIComponent(settlerName);
-                        const encodedCoordinates = encodeURIComponent(`${lat},${lng}`);
-                        
                         const shareKnowledgeUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfldIttf1uNJy_MBc_3L6IYD70ILZ8ez_Wd-ZT39tuFEX3bIg/viewform?usp=pp_url&entry.654077265=${encodedLekwungenName}&entry.89063686=${encodedSettlerName}&entry.596989000=${encodedCoordinates}`;
 
                         // --- 4. Construct Final Popup Content ---
-                       const popupContent = `
+                        const popupContent = `
                             <!-- Header -->
                             <div class="bg-[#8C7853] text-white p-4 flex items-start">
                                 <span class="text-2xl mr-3 mt-0.5">📍</span>
