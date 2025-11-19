@@ -55,17 +55,17 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 1.4rem;
-            margin: 4px 2px;
+            font-size: 1rem;
+            margin: 4px auto; /* centre */
             cursor: pointer;
             border-radius: 4px;
         }
-        .popup-content h1 {
+        .popup-content h2 {
             font-size: 3rem;
         }
         .popup-content h3 {
             text-transform: uppercase;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
             color: darkgrey;
             margin-bottom: 5px;
             margin-top: 10px;
@@ -200,8 +200,8 @@
                             audioButtonHtml = `
                                 <p><button onclick="new Audio('${audioUrl}').play()">
                                     ▶ Listen to Pronunciation
-                                </button></p>
-                                <p><small>Audio recording ${audioCopyright}. All rights reserved.</small></p>
+                                </button><br />
+                                <small>Audio recording ${audioCopyright}. All rights reserved.</small></p>
                             `;
                         }
 
