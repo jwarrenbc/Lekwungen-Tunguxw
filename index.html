@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Lək̓ʷaŋən Təŋəxʷ</title>
+    <title>K̓ʷə́nəxʷ Lək̓ʷaŋən Təŋəxʷ</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" crossorigin="" />
 
@@ -178,12 +178,29 @@
                             `;
                         }
 
-                        // --- 3. Construct Final Popup Content ---
+                        // --- 3. Construct Share Your Knowledge link ---
+                        let encodedCoordinates = '';
+                        if (layer.getLatLng) {
+                            // Point Marker
+                            const latLng = layer.getLatLng();
+                            lat = latLng.lat.toFixed(6);
+                            lng = latLng.lng.toFixed(6);
+
+                            encodedCoordinates = encodeURIComponent(`${latLng.lat.toFixed(6)},${latLng.lng.toFixed(6)}`);
+                        }
+
+                        const encodedLekwungenName = encodeURIComponent(traditionalName);
+                        const encodedSettlerName = encodeURIComponent(settlerName);
+                        const encodedCoordinates = encodeURIComponent(`${lat},${lng}`);
+                        
+                        const shareKnowledgeUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfldIttf1uNJy_MBc_3L6IYD70ILZ8ez_Wd-ZT39tuFEX3bIg/viewform?usp=pp_url&entry.654077265=${encodedLekwungenName}&entry.89063686=${encodedSettlerName}&entry.596989000=${encodedCoordinates}`;
+
+                        // --- 4. Construct Final Popup Content ---
                        const popupContent = `
                             <!-- Header -->
                             <div class="bg-[#8C7853] text-white p-4 flex items-start">
                                 <span class="text-2xl mr-3 mt-0.5">📍</span>
-                                <h3 class="text-xl font-bold leading-tight">${lekwungenName}</h3>
+                                <h3 class="text-2xl font-bold leading-tight">${lekwungenName}</h3>
                             </div>
                             
                             <!-- Body -->
@@ -192,13 +209,19 @@
 
                                 <!-- Settler Name -->
                                 <div class="mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                    <span class="mr-1 text-lg">🔠</span> Settler Name
+                                    <span class="mr-1 text-lg">🇬🇧</span> Settler Name
                                 </div>
                                 <div class="text-base text-gray-800 pl-6 mb-2 font-medium">
                                     ${settlerName}
                                 </div>
 
                                 ${sourcesHtml}
+                            
+                                <div class="pt-3 mt-4 border-t border-gray-200 flex justify-center space-x-4">
+                                    <a href="${shareKnowledgeUrl}" target="_blank">
+                                        Share Your Knowledge
+                                    </a>
+                                </div>
                             </div>
                         `;
                         
