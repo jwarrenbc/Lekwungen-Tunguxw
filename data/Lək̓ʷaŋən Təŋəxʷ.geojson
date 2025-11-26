@@ -1,170 +1,176 @@
 {
-    "type": "FeatureCollection",
-    "name": "Lək̓ʷaŋən Təŋəxʷ",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "p̓əlác̓əs",
-                "audio": {
-                    "src": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
-                    "copyright": "©2024 Elmer George"
-                },
-                "sources": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.375833,
-                    48.425791
-                ]
-            }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
+        "description": "These are the borders of the Swengwhung Tribe Treaty of 1850, which is part of the Douglas Treaties. The traditional territory of the Sxʷéŋxʷəŋ family likely extended further towards q̓əm̓ásəŋ in the north and may not have included some of the southwest (Duff, 1969).",
+        "sources": [
+          "\"Swengwhung Tribe Treaty.\" The Fort Victoria and Other Vancouver Island Treaties 1850-1854, 13 April 1850.",
+          "Lutz, John Sutton. Makuk: A new history of Aboriginal-white relations. UBC Press, 2009.",
+          "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -123.3369089,
+              48.4092248
+            ],
+            [
+              -123.3484457,
+              48.4318801
+            ],
+            [
+              -123.3675255,
+              48.4636393
+            ],
+            [
+              -123.3815087,
+              48.439465
+            ],
+            [
+              -123.3937732,
+              48.4181476
+            ],
+            [
+              -123.37689957048777,
+              48.408825626619404
+            ],
+            [
+              -123.34877877727511,
+              48.4026610370347
+            ],
+            [
+              -123.3369089,
+              48.4092248
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "p̓əlác̓əs",
+        "audio": {
+          "src": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
+          "speaker": "Elmer George",
+          "copyright": "©2022 Esquimalt Nation"
         },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "pšay̓",
-                "sources": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.367845,
-                    48.421571
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "mək̓ʷəqs",
-                "sources": [
-                    "https://fishing-app.gpsnauticalcharts.com/"
-                ]
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.412467,
-                    48.416216
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": null,
-                "settler name": "\"The Bay immediately east of Clover Point\"",
-                "sources": [
-                    "https://www.rcaanc-cirnac.gc.ca/eng/1100100029052/1581515763202#sweng"
-                ],
-                "category": "Douglas Treaties"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.3366575,
-                    48.408738
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": null,
-                "settler name": "\"Fountain Ridge\"",
-                "sources": null,
-                "category": "Douglas Treaties"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.3484999,
-                    48.4314963
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": null,
-                "settler name": "Island of the Dead (Halkett Island)",
-                "sources": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.3814043,
-                    48.4391248
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": null,
-                "settler name": "\"The head of the...Inlet of Camoson\"",
-                "sources": [
-                    "https://fishing-app.gpsnauticalcharts.com/"
-                ],
-                "category": "Douglas Treaties"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.393684,
-                    48.417817
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
-                "sources": [
-                    "\"Swengwhung Tribe Treaty.\" The Fort Victoria and Other Vancouver Island Treaties 1850-1854, 13 April 1850.",
-                    "Lutz, John Sutton. Makuk: A new history of Aboriginal-white relations. UBC Press, 2009."
-                ]
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -123.3369089,
-                            48.4092248
-                        ],
-                        [
-                            -123.3484457,
-                            48.4318801
-                        ],
-                        [
-                            -123.3675255,
-                            48.4636393
-                        ],
-                        [
-                            -123.3815087,
-                            48.439465
-                        ],
-                        [
-                            -123.3937732,
-                            48.4181476
-                        ],
-                        [
-                            -123.3949222,
-                            48.254279
-                        ],
-                        [
-                            -123.3392613,
-                            48.2656206
-                        ],
-                        [
-                            -123.3369089,
-                            48.4092248
-                        ]
-                    ]
-                ]
-            }
-        }
-    ]
+        "sources": null
+      },
+      "geometry": {
+        "coordinates": [
+          -123.375833,
+          48.425791
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pšay̓",
+        "description": "Place of Rushes",
+        "sources": [
+            "https://www.firstvoices.com/lekwungen/"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.367845,
+          48.421571
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "mək̓ʷəqs",
+        "description": "Reef net site",
+        "sources": [
+          "https://fishing-app.gpsnauticalcharts.com/"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.412467,
+          48.416216
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": null,
+        "settler name": "\"The Bay immediately east of Clover Point\"",
+        "sources": [
+          "https://www.rcaanc-cirnac.gc.ca/eng/1100100029052/1581515763202#sweng"
+        ],
+        "category": "Douglas Treaties"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3366575,
+          48.408738
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": null,
+        "settler name": "\"Fountain Ridge\"",
+        "sources": null,
+        "category": "Douglas Treaties"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3484999,
+          48.4314963
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": null,
+        "settler name": "Island of the Dead (Halkett Island)",
+        "sources": null
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3814043,
+          48.4391248
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": null,
+        "settler name": "\"The head of the...Inlet of Camoson\"",
+        "sources": [
+          "https://fishing-app.gpsnauticalcharts.com/"
+        ],
+        "category": "Douglas Treaties"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.393684,
+          48.417817
+        ],
+        "type": "Point"
+      }
+    }
+  ]
 }
