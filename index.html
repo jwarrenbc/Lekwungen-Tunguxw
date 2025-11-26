@@ -45,6 +45,8 @@
     <div id="map" class="h-full w-full bg-[#333]"></div>
     
     <div id="info-box" class="absolute top-3 left-12 z-50 bg-white py-2 px-3 rounded-lg shadow-lg text-sm">Loading map...</div>
+    
+    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-3 right-3 z-50 bg-white py-2 px-4 rounded-lg shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">About</a>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/dev/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -57,8 +59,13 @@
              try {
                 map = L.map('map', {
                     center: [48.428333, -123.364722], // Victoria, BC
-                    zoom: 10
+                    zoom: 10,
+                    zoomControl: false
                 });
+                
+                L.control.zoom({
+                    position: 'bottomright'
+                }).addTo(map);
                 
                 const satelliteLayer = L.gridLayer.googleMutant({
                     type: 'satellite',
@@ -100,7 +107,7 @@
                         const settlerName = props?.['settler name'] || 'None';
                         const audioUrl = props?.audio?.src;
                         const audioCopyright = props?.audio?.copyright;
-                        const description = props?.description;
+                        const description = props?.description || '';
                         const sources = props?.sources;
 
                         // --- 1. Construct Audio Button HTML ---
@@ -111,10 +118,16 @@
                                     <button onclick="new Audio('${audioUrl}').play()" 
                                             class="bg-yellow-700 hover:bg-yellow-800 text-white text-sm font-bold py-2 px-4 rounded-full inline-flex items-center transition-colors shadow-sm">
                                         <span class="mr-2 text-lg">▶</span> Listen to Pronunciation
-                                    </button>
+                                    </button>`;
+                                
+                            if (audioCopyright) {
+                                audioSectionHtml += `
                                     <div class="text-[10px] text-gray-400 mt-2">
                                         Audio recording ${audioCopyright}
-                                    </div>
+                                    </div>`;
+                            }
+
+                            audioSectionHtml += `
                                 </div>
                             `;
                         }
