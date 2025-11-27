@@ -58,6 +58,10 @@
         "name": "xʷséy̓q̓əm",
         "settler name": "James Bay",
         "description": "Place of Clay, from séy̓əq̓ = clay",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9y%CC%93q%CC%93%C9%99m.mp3",
+          "copyright": "©2025 Jared Warren"
+        },
         "sources": [
           "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
         ]
@@ -74,7 +78,11 @@
       "type": "Feature",
       "properties": {
         "name": "q̓əm̓ásəŋ",
-        "settler name": "Tillicum Narrows"
+        "settler name": "Tillicum Narrows",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/q%CC%93%C9%99m%CC%93%C3%A1s%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
@@ -88,7 +96,11 @@
       "type": "Feature",
       "properties": {
         "name": "xʷsépsəm",
-        "description": "\"Little neck\""
+        "description": "\"Little neck\"",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9ps%C9%99m.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
@@ -103,7 +115,11 @@
       "type": "Feature",
       "properties": {
         "name": "šč̓aaɬ",
-        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia"
+        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1%C4%8D%CC%93aa%C9%AC.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
@@ -248,7 +264,11 @@
       "properties": {
         "name": "pəl̓qʷíc̓əŋ",
         "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settler name": "Craigflower Creek"
+        "settler name": "Craigflower Creek",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C9%99l%CC%93q%CA%B7%C3%ADc%CC%93%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
