@@ -119,6 +119,10 @@
       "properties": {
         "name": "pšay̓",
         "description": "Place of Rushes",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C5%A1ay%CC%93.mp3",
+          "copyright": "©2025 Jared Warren"
+        },
         "sources": [
           "https://www.firstvoices.com/lekwungen/"
         ]
@@ -156,6 +160,10 @@
       "properties": {
         "name": "mək̓ʷəqs",
         "description": "Reef net site",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/m%C9%99k%CC%93%CA%B7%C9%99qs.mp3",
+          "copyright": "©2025 Jared Warren"
+        },
         "sources": [
           "https://fishing-app.gpsnauticalcharts.com/"
         ]
