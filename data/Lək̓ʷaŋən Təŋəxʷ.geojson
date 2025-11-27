@@ -35,7 +35,7 @@
       "properties": {
         "name": "mək̓ʷəqs",
         "description": "Reef net site",
-        "sources": "[\"https://fishing-app.gpsnauticalcharts.com/\"]",
+        "sources": ["https://fishing-app.gpsnauticalcharts.com/"],
         "category": "fishing"
       },
       "geometry": {
