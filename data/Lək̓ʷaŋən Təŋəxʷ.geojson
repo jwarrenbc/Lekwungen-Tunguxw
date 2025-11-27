@@ -1,24 +1,145 @@
 {
-    "type": "FeatureCollection",
-    "name": "Lək̓ʷaŋən Təŋəxʷ",
-    "features": [
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "p̓əlác̓əs",
-                "audio": {
-                    "src": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
-                    "copyright": "©2024 Elmer George"
-                },
-                "sources": null
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -123.375833,
-                    48.425791
-                ]
-            }
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
+        "description": "These are the borders of the Swengwhung Tribe Treaty of 1850, which is part of the Douglas Treaties. The traditional territory of the Sxʷéŋxʷəŋ family likely extended further towards q̓əm̓ásəŋ in the north and may not have included some of the southwest area (Duff, 1969).",
+        "sources": [
+          "\"Swengwhung Tribe Treaty.\" The Fort Victoria and Other Vancouver Island Treaties 1850-1854, 13 April 1850.",
+          "Lutz, John Sutton. Makuk: A new history of Aboriginal-white relations. UBC Press, 2009.",
+          "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              -123.3369089,
+              48.4092248
+            ],
+            [
+              -123.3484457,
+              48.4318801
+            ],
+            [
+              -123.3675255,
+              48.4636393
+            ],
+            [
+              -123.3815087,
+              48.439465
+            ],
+            [
+              -123.3937732,
+              48.4181476
+            ],
+            [
+              -123.37689957048777,
+              48.408825626619404
+            ],
+            [
+              -123.34877877727511,
+              48.4026610370347
+            ],
+            [
+              -123.3369089,
+              48.4092248
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "xʷséy̓q̓əm",
+        "settler name": "James Bay",
+        "description": "Place of Clay, from séy̓əq̓ = clay",
+        "sources": [
+          "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.36591642842913,
+          48.42124105454346
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "q̓əm̓ásəŋ",
+        "settler name": "Tillicum Narrows"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.40034015702143,
+          48.446386691468916
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "xʷsépsəm",
+        "description": "\"Little neck\""
+      },
+      "geometry": {
+        "coordinates": [
+          -123.42186777657514,
+          48.45264182675086
+        ],
+        "type": "Point"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "šč̓aaɬ",
+        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43170020192824,
+          48.451490326752435
+        ],
+        "type": "Point"
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pšay̓",
+        "description": "Place of Rushes",
+        "sources": [
+          "https://www.firstvoices.com/lekwungen/"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.36751514886699,
+          48.42016742166368
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "p̓əlác̓əs",
+        "description": "Place of Cradles, from p̓áʔc̓əs = cradle",
+        "audio": {
+          "src": "https://fv-media-uploads.s3.amazonaws.com/lekwungen/1efb68c8-25b5-484c-9b9b-c88f0637d7d7/place_p%C9%99la%C4%8D%C9%99s.mp3",
+          "speaker": "Elmer George",
+          "copyright": "©2022 Esquimalt Nation"
         },
         "sources": null
       },
@@ -35,8 +156,9 @@
       "properties": {
         "name": "mək̓ʷəqs",
         "description": "Reef net site",
-        "sources": ["https://fishing-app.gpsnauticalcharts.com/"],
-        "category": "fishing"
+        "sources": [
+          "https://fishing-app.gpsnauticalcharts.com/"
+        ]
       },
       "geometry": {
         "coordinates": [
@@ -44,8 +166,7 @@
           48.416216
         ],
         "type": "Point"
-      },
-      "id": 7
+      }
     },
     {
       "type": "Feature",
@@ -99,10 +220,12 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "sč̓əmásən",
-        "settler name": "The Inlet of Camoson, Victoria Harbour",
-        "sources": ["https://fishing-app.gpsnauticalcharts.com/"],
-        "category": ""
+        "name": null,
+        "settler name": "\"The head of the...Inlet of Camoson\"",
+        "sources": [
+          "https://fishing-app.gpsnauticalcharts.com/"
+        ],
+        "category": "Douglas Treaties"
       },
       "geometry": {
         "coordinates": [
@@ -110,16 +233,14 @@
           48.417817
         ],
         "type": "Point"
-      },
-      "id": 11
+      }
     },
     {
       "type": "Feature",
       "properties": {
         "name": "pəl̓qʷíc̓əŋ",
         "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settler name": "Craigflower Creek",
-        "category": "river"
+        "settler name": "Craigflower Creek"
       },
       "geometry": {
         "coordinates": [
@@ -128,87 +249,7 @@
         ],
         "type": "Point"
       },
-      "id": 12
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "x̣əláŋiqən",
-        "settler name": "Colquitz Creek",
-        "description": "\"Stream that tumbles down\"",
-        "sources": ["Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.40130137483393,
-          48.4549620506418
-        ],
-        "type": "Point"
-      },
       "id": 13
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "qállə",
-        "description": "\"Spring water gushing down the beach\"",
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.43034716979454,
-          48.444696031347604
-        ],
-        "type": "Point"
-      },
-      "id": 14
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "sqəŋínəs",
-        "settler name": "Discovery Island",
-        "description": "Name of the island and the people who lived there."
-      },
-      "geometry": {
-        "coordinates": [
-          -123.23768277859314,
-          48.42602374878135
-        ],
-        "type": "Point"
-      },
-      "id": 15
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "míqən",
-        "description": "\"Warmed by the sun\""
-      },
-      "geometry": {
-        "coordinates": [
-          -123.36483300513848,
-          48.409127438148914
-        ],
-        "type": "Point"
-      },
-      "id": 16
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "description": "Klallam and xʷsépsəm village from 1847 - 1855",
-        "sources": ["Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."],
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.37548474388473,
-          48.4228284097548
-        ],
-        "type": "Point"
-      },
-      "id": 17
     }
   ]
 }
