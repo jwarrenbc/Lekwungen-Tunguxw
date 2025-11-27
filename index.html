@@ -44,9 +44,9 @@
 <body>
     <div id="map" class="h-full w-full bg-[#333]"></div>
     
-    <div id="info-box" class="absolute top-3 left-12 z-50 bg-white py-2 px-3 rounded-lg shadow-lg text-sm">Loading map...</div>
+    <div id="info-box" class="absolute top-3 left-12 z-[1000] bg-white py-2 px-3 rounded-lg shadow-lg text-sm">Loading map...</div>
     
-    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-3 right-3 z-50 bg-white py-2 px-4 rounded-lg shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">About</a>
+    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-3 right-3 z-[1000] bg-white py-2 px-4 rounded-lg shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">About</a>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/dev/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -66,6 +66,9 @@
                 L.control.zoom({
                     position: 'bottomright'
                 }).addTo(map);
+
+                /* Hide Leaflet attribution */
+                map.attributionControl.setPrefix(false);
                 
                 const satelliteLayer = L.gridLayer.googleMutant({
                     type: 'satellite',
@@ -73,6 +76,7 @@
                     opacity: 1.0
                 }).addTo(map);
 
+                /* Google often? adds its own copyright attribution, so this is unnecessary: */
                 /* map.attributionControl.setPrefix(false);
                 map.attributionControl.addAttribution('Satellite images &copy; Google'); */
                 

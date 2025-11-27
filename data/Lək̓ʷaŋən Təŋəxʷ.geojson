@@ -50,7 +50,8 @@
           ]
         ],
         "type": "Polygon"
-      }
+      },
+      "id": 0
     },
     {
       "type": "Feature",
@@ -82,13 +83,15 @@
           48.446386691468916
         ],
         "type": "Point"
-      }
+      },
+      "id": 2
     },
     {
       "type": "Feature",
       "properties": {
         "name": "xʷsépsəm",
-        "description": "\"Little neck\""
+        "description": "\"Little neck\"",
+        "category": "village"
       },
       "geometry": {
         "coordinates": [
@@ -156,9 +159,8 @@
       "properties": {
         "name": "mək̓ʷəqs",
         "description": "Reef net site",
-        "sources": [
-          "https://fishing-app.gpsnauticalcharts.com/"
-        ]
+        "sources": "[\"https://fishing-app.gpsnauticalcharts.com/\"]",
+        "category": "fishing"
       },
       "geometry": {
         "coordinates": [
@@ -166,7 +168,8 @@
           48.416216
         ],
         "type": "Point"
-      }
+      },
+      "id": 7
     },
     {
       "type": "Feature",
@@ -220,12 +223,10 @@
     {
       "type": "Feature",
       "properties": {
-        "name": null,
-        "settler name": "\"The head of the...Inlet of Camoson\"",
-        "sources": [
-          "https://fishing-app.gpsnauticalcharts.com/"
-        ],
-        "category": "Douglas Treaties"
+        "name": "sč̓əmásən",
+        "settler name": "The Inlet of Camoson, Victoria Harbour",
+        "sources": ["https://fishing-app.gpsnauticalcharts.com/"],
+        "category": ""
       },
       "geometry": {
         "coordinates": [
@@ -233,14 +234,16 @@
           48.417817
         ],
         "type": "Point"
-      }
+      },
+      "id": 11
     },
     {
       "type": "Feature",
       "properties": {
         "name": "pəl̓qʷíc̓əŋ",
         "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settler name": "Craigflower Creek"
+        "settler name": "Craigflower Creek",
+        "category": "river"
       },
       "geometry": {
         "coordinates": [
@@ -249,7 +252,87 @@
         ],
         "type": "Point"
       },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əláŋiqən",
+        "settler name": "Colquitz Creek",
+        "description": "\"Stream that tumbles down\"",
+        "sources": ["Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.40130137483393,
+          48.4549620506418
+        ],
+        "type": "Point"
+      },
       "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qállə",
+        "description": "\"Spring water gushing down the beach\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43034716979454,
+          48.444696031347604
+        ],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sqəŋínəs",
+        "settler name": "Discovery Island",
+        "description": "Name of the island and the people who lived there."
+      },
+      "geometry": {
+        "coordinates": [
+          -123.23768277859314,
+          48.42602374878135
+        ],
+        "type": "Point"
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "míqən",
+        "description": "\"Warmed by the sun\""
+      },
+      "geometry": {
+        "coordinates": [
+          -123.36483300513848,
+          48.409127438148914
+        ],
+        "type": "Point"
+      },
+      "id": 16
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Klallam and xʷsépsəm village from 1847 - 1855",
+        "sources": ["Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."],
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.37548474388473,
+          48.4228284097548
+        ],
+        "type": "Point"
+      },
+      "id": 17
     }
   ]
 }
