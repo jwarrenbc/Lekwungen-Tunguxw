@@ -288,7 +288,9 @@
         "settlerName": "Colquitz Creek",
         "description": "\"Stream that tumbles down\"",
         "category": "river",
-        "sources": ["Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."]
+        "sources": [
+          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
+        ]
       },
       "geometry": {
         "coordinates": [
@@ -299,7 +301,7 @@
       },
       "id": 13
     },
-        {
+    {
       "type": "Feature",
       "properties": {
         "name": "qállə",
@@ -350,7 +352,9 @@
       "type": "Feature",
       "properties": {
         "description": "Šƛ̓eʔləm̓ (Klallam) and Xʷsépsəm village from 1847 - 1855",
-        "sources": ["Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."],
+        "sources": [
+          "Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."
+        ],
         "category": "village"
       },
       "geometry": {
@@ -361,6 +365,71 @@
         "type": "Point"
       },
       "id": 17
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "c̓áŋəs",
+        "settlerName": "Albert Head Lagoon",
+        "description": "Origin of the anglicized word \"Songhees\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.48947303092481,
+          48.39398592683736
+        ],
+        "type": "Point"
+      },
+      "id": 18
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓áyəq",
+        "description": "\"Mouldy beach\" from the algae on rocks here",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45105276409771,
+          48.440986411319614
+        ],
+        "type": "Point"
+      },
+      "id": 19
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ɬəŋálacin",
+        "description": "\"Two pieces [islands] torn apart\"",
+        "settlerName": "Smart and McCarthy Islands"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.44882758323317,
+          48.44734727473028
+        ],
+        "type": "Point"
+      },
+      "id": 20
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓ílixʷ",
+        "description": "\"Stones with green moss hanging from them\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45863933228858,
+          48.45557101581238
+        ],
+        "type": "Point"
+      },
+      "id": 21
     }
   ]
 }
