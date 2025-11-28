@@ -56,7 +56,7 @@
       "type": "Feature",
       "properties": {
         "name": "xʷséy̓q̓əm",
-        "settler name": "James Bay",
+        "settlerName": "James Bay",
         "description": "Place of Clay, from séy̓əq̓ = clay",
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9y%CC%93q%CC%93%C9%99m.mp3",
@@ -78,7 +78,7 @@
       "type": "Feature",
       "properties": {
         "name": "q̓əm̓ásəŋ",
-        "settler name": "Tillicum Narrows",
+        "settlerName": "Tillicum Narrows",
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/q%CC%93%C9%99m%CC%93%C3%A1s%C9%99%C5%8B.mp3",
           "copyright": "©2025 Jared Warren"
@@ -196,7 +196,7 @@
       "type": "Feature",
       "properties": {
         "name": null,
-        "settler name": "\"The Bay immediately east of Clover Point\"",
+        "settlerName": "\"The Bay immediately east of Clover Point\"",
         "sources": [
           "https://www.rcaanc-cirnac.gc.ca/eng/1100100029052/1581515763202#sweng"
         ],
@@ -214,7 +214,7 @@
       "type": "Feature",
       "properties": {
         "name": null,
-        "settler name": "\"Fountain Ridge\"",
+        "settlerName": "\"Fountain Ridge\"",
         "sources": null,
         "category": "Douglas Treaties"
       },
@@ -230,7 +230,7 @@
       "type": "Feature",
       "properties": {
         "name": null,
-        "settler name": "Island of the Dead (Halkett Island)",
+        "settlerName": "Island of the Dead (Halkett Island)",
         "sources": null
       },
       "geometry": {
@@ -245,7 +245,7 @@
       "type": "Feature",
       "properties": {
         "name": null,
-        "settler name": "\"The head of the...Inlet of Camoson\"",
+        "settlerName": "\"The head of the...Inlet of Camoson\"",
         "sources": [
           "https://fishing-app.gpsnauticalcharts.com/"
         ],
@@ -264,7 +264,7 @@
       "properties": {
         "name": "pəl̓qʷíc̓əŋ",
         "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settler name": "Craigflower Creek",
+        "settlerName": "Craigflower Creek",
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C9%99l%CC%93q%CA%B7%C3%ADc%CC%93%C9%99%C5%8B.mp3",
           "copyright": "©2025 Jared Warren"

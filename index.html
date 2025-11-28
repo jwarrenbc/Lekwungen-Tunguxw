@@ -46,7 +46,7 @@
     
     <div id="info-box" class="absolute top-3 left-12 z-[1000] bg-white py-2 px-3 rounded-lg shadow-lg text-sm">Loading map...</div>
     
-    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-3 right-3 z-[1000] bg-white py-2 px-4 rounded-lg shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">About</a>
+    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-3 right-3 z-[1000] bg-white py-2 px-4 rounded-lg shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">ℹ️ X̣čnáxʷ (About)</a>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/dev/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -107,8 +107,8 @@
                         const props = feature.properties;
                         
                         // Safely extract properties
-                        const lekwungenName = props?.name || 'Unknown';
-                        const settlerName = props?.['settler name'] || 'None';
+                        const lekwungenName = props?.name || 'ʔawə x̣əčtíŋ (Not known)';
+                        const settlerName = props?.settlerName || 'ʔawənə (None)';
                         const audioUrl = props?.audio?.src;
                         const audioCopyright = props?.audio?.copyright;
                         const description = props?.description || '';
@@ -121,7 +121,7 @@
                                 <div class="bg-amber-50 rounded-lg p-3 mb-3 border border-amber-100 text-center">
                                     <button onclick="new Audio('${audioUrl}').play()" 
                                             class="bg-yellow-700 hover:bg-yellow-800 text-white text-sm font-bold py-2 px-4 rounded-full inline-flex items-center transition-colors shadow-sm">
-                                        <span class="mr-2 text-lg">▶</span> Listen to Pronunciation
+                                        <span class="mr-2 text-lg">▶</span> ʔəléʔnəxʷ (Hear It)
                                     </button>`;
                                 
                             if (audioCopyright) {
@@ -142,7 +142,7 @@
                             const listItems = sources.map(source => `<li class="mb-1">${source}</li>`).join('');
                             sourcesHtml = `
                                 <div class="mt-4 mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                    <span class="mr-1 text-lg">📚</span> Sources
+                                    <span class="mr-1 text-lg">📚</span> Čsléʔəɬ (Sources)
                                 </div>
                                 <ul class="list-disc pl-5 text-xs text-gray-600 leading-relaxed">
                                     ${listItems}
@@ -183,7 +183,7 @@
 
                                 <!-- Settler Name -->
                                 <div class="mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                    <span class="mr-1 text-lg">🇬🇧</span> Settler Name
+                                    <span class="mr-1 text-lg">🇬🇧</span> Xʷənítəm Snéʔ (Settler Name)
                                 </div>
                                 <div class="text-base text-gray-800 pl-6 mb-2 font-medium">
                                     ${settlerName}
@@ -193,7 +193,7 @@
                             
                                 <div class="pt-3 mt-4 border-t border-gray-200 flex justify-center space-x-4">
                                     <a href="${shareKnowledgeUrl}" target="_blank">
-                                        Share Your Knowledge
+                                        Ɬil Sx̣čənə́xʷ (Gift Your Knowledge)
                                     </a>
                                 </div>
                             </div>
