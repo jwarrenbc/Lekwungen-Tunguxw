@@ -46,7 +46,7 @@
     
     <div id="info-box" class="absolute top-3 left-12 z-[1000] bg-white rounded-lg shadow-lg text-sm py-3 px-4">Loading map...</div>
     
-    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-0 right-0 z-[1000] bg-white shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">ℹ️ About</a>
+    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-0 right-0 z-[1000] bg-white shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors px-2">ℹ️ About</a>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/dev/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -109,6 +109,7 @@
                             'village': '🏘️',
                             'fishing': '🎣',
                             'river': '💧',
+                            'mountain': '⛰️',
                             'default': '📍'
                         };
                         
@@ -119,8 +120,8 @@
                         const icon = L.divIcon({
                             html: emoji,
                             className: 'emoji-marker',
-                            iconSize: [30, 30],
-                            iconAnchor: [15, 15]
+                            iconSize: [60, 60],
+                            iconAnchor: [30, 30]
                         });
                         
                         return L.marker(latlng, { icon: icon });

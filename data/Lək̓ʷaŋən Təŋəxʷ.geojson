@@ -4,6 +4,363 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "xʷsépsəm",
+        "description": "\"Little neck\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9ps%C9%99m.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.42186777657514,
+          48.45264182675086
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "šč̓aaɬ",
+        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1%C4%8D%CC%93aa%C9%AC.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43170020192824,
+          48.451490326752435
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pəl̓qʷíc̓əŋ",
+        "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
+        "settlerName": "Craigflower Creek",
+        "audio": "{\"src\":\"https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C9%99l%CC%93q%CA%B7%C3%ADc%CC%93%C9%99%C5%8B.mp3\",\"copyright\":\"©2025 Jared Warren\"}",
+        "category": "river"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43606588276239,
+          48.45897959610045
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əláŋiqən",
+        "settlerName": "Colquitz Creek",
+        "description": "\"Stream that tumbles down\"",
+        "category": "river",
+        "sources": [
+          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.40130137483393,
+          48.4549620506418
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qállə",
+        "description": "\"Spring water gushing down the beach\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43034716979454,
+          48.444696031347604
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sqəŋínəs",
+        "settler name": "Discovery Island",
+        "description": "Name of the island and the people who lived there."
+      },
+      "geometry": {
+        "coordinates": [
+          -123.23768277859314,
+          48.42602374878135
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "míqən",
+        "description": "\"Warmed by the sun\""
+      },
+      "geometry": {
+        "coordinates": [
+          -123.36483300513848,
+          48.409127438148914
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Šƛ̓eʔləm̓ (Klallam) and Xʷsépsəm village from 1847 - 1855",
+        "sources": [
+          "Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."
+        ],
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.37548474388473,
+          48.4228284097548
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "c̓áŋəs",
+        "settlerName": "Albert Head Lagoon",
+        "description": "Origin of the anglicized word \"Songhees\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.48947303092481,
+          48.39398592683736
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓áyəq",
+        "description": "\"Mouldy beach\" from the algae on rocks here",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45105276409771,
+          48.440986411319614
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ɬəŋálacin",
+        "description": "\"Two pieces [islands] torn apart\"",
+        "settlerName": "Smart and McCarthy Islands"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.44882758323317,
+          48.44734727473028
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓ílixʷ",
+        "description": "\"Stones with green moss hanging from them\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45863933228858,
+          48.45557101581238
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "šx̣ʷiméɬəɬ",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43243815933889,
+          48.43064777349235
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "stqéyəʔelə",
+        "description": "\"Wolf den\" from stqéyeʔ = \"wolf\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43341367783185,
+          48.44184006109103
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "xʷəxʷačqə̓in",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3524330229837,
+          48.406203157325336
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ʷəléyɬč",
+        "description": "From x̣ʷəléʔəɬč = \"willow tree\"",
+        "settlerName": "Ross Bay"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.34891430039806,
+          48.4067641833789
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "saʔsyəməʔ",
+        "description": "From sayəmən = \"harpoon\"",
+        "settlerName": "Harling Point"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.32307226201333,
+          48.406766245624
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ƛ̓ikʷeʔnəŋ",
+        "description": "From ƛ̓ik̓ʷən = \"pea\" for the Lathyrus japonicus that grow here",
+        "settlerName": "Trial Island"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30557267490016,
+          48.39766925142726
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əx̣íʔləx̣",
+        "description": "\"Place of War\", from sx̣éləx̣ = \"war\"",
+        "settlerName": "Gonzales Point",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29616323853398,
+          48.41249688638348
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "špxʷəŋ",
+        "description": "\"Flying dust\"",
+        "settlerName": "Oak Bay"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30435946126417,
+          48.42402786484692
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷəw̓xʷičəlaʔ",
+        "settlerName": "Mary Tod Island"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29901121996323,
+          48.42794626849292
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sčíčnəɬ",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3021826567523,
+          48.43634944031396
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sc̓sn̓áʔəŋ",
+        "settlerName": "Chatham Island"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.24902186403415,
+          48.43669044237723
+        ],
+        "type": "Point"
+      },
+      "id": 22
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
         "description": "These are the borders of the Swengwhung Tribe Treaty of 1850, which is part of the Douglas Treaties. The traditional territory of the Sxʷéŋxʷəŋ family likely extended further towards q̓əm̓ásəŋ in the north and may not have included some of the southwest area (Duff, 1969).",
         "sources": [
@@ -91,45 +448,6 @@
         ],
         "type": "Point"
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "xʷsépsəm",
-        "description": "\"Little neck\"",
-        "category": "village",
-        "audio": {
-          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9ps%C9%99m.mp3",
-          "copyright": "©2025 Jared Warren"
-        }
-      },
-      "geometry": {
-        "coordinates": [
-          -123.42186777657514,
-          48.45264182675086
-        ],
-        "type": "Point"
-      },
-      "id": 3
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "šč̓aaɬ",
-        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia",
-        "audio": {
-          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1%C4%8D%CC%93aa%C9%AC.mp3",
-          "copyright": "©2025 Jared Warren"
-        }
-      },
-      "geometry": {
-        "coordinates": [
-          -123.43170020192824,
-          48.451490326752435
-        ],
-        "type": "Point"
-      },
-      "id": 4
     },
     {
       "type": "Feature",
@@ -264,172 +582,111 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "pəl̓qʷíc̓əŋ",
-        "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settlerName": "Craigflower Creek",
-        "audio": {
-          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C9%99l%CC%93q%CA%B7%C3%ADc%CC%93%C9%99%C5%8B.mp3",
-          "copyright": "©2025 Jared Warren"
-        }
+        "name": "ƛ̓ápas",
+        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
       },
       "geometry": {
         "coordinates": [
-          -123.43606588276239,
-          48.45897959610045
+          -123.25478239320476,
+          48.43867532835833
         ],
         "type": "Point"
       },
-      "id": 13
+      "id": 33
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "x̣əláŋiqən",
-        "settlerName": "Colquitz Creek",
-        "description": "\"Stream that tumbles down\"",
-        "category": "river",
-        "sources": [
-          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
-        ]
+        "name": "škʷəkáyqals",
+        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
       },
       "geometry": {
         "coordinates": [
-          -123.40130137483393,
-          48.4549620506418
+          -123.25458725703967,
+          48.44143331095751
         ],
         "type": "Point"
       },
-      "id": 13
+      "id": 34
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "qállə",
-        "description": "\"Spring water gushing down the beach\"",
+        "name": "p̓əqáynəŋ",
+        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.27293356172575,
+          48.44480679646526
+        ],
+        "type": "Point"
+      },
+      "id": 35
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qáx̣ələŋ",
+        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29277546815138,
+          48.44409852642548
+        ],
+        "type": "Point"
+      },
+      "id": 36
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷəstéw̓əč",
+        "description": "\"Beach exposed to the weather\"",
+        "settlerName": "Cadboro Bay",
         "category": "village"
       },
       "geometry": {
         "coordinates": [
-          -123.43034716979454,
-          48.444696031347604
+          -123.29645570115574,
+          48.458547574551886
         ],
         "type": "Point"
       },
-      "id": 14
+      "id": 37
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "sqəŋínəs",
-        "settler name": "Discovery Island",
-        "description": "Name of the island and the people who lived there."
-      },
-      "geometry": {
-        "coordinates": [
-          -123.23768277859314,
-          48.42602374878135
-        ],
-        "type": "Point"
-      },
-      "id": 15
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "míqən",
-        "description": "\"Warmed by the sun\""
-      },
-      "geometry": {
-        "coordinates": [
-          -123.36483300513848,
-          48.409127438148914
-        ],
-        "type": "Point"
-      },
-      "id": 16
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "description": "Šƛ̓eʔləm̓ (Klallam) and Xʷsépsəm village from 1847 - 1855",
-        "sources": [
-          "Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."
-        ],
+        "name": "x̣ə́w̓əŋə́qsən",
+        "description": "\"Point of cracking sea urchins\"",
         "category": "village"
       },
       "geometry": {
         "coordinates": [
-          -123.37548474388473,
-          48.4228284097548
+          -123.26861155149513,
+          48.45543546252031
         ],
         "type": "Point"
       },
-      "id": 17
+      "id": 38
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "c̓áŋəs",
-        "settlerName": "Albert Head Lagoon",
-        "description": "Origin of the anglicized word \"Songhees\"",
-        "category": "village"
+        "name": "pq̓aal̓s",
+        "sources": ["Clancy, Dustin. \"Ancient Names Weigh on New Battles for First Nations in Victoria.\" Victoria News, 25 Oct. 2013, https://vicnews.com/2013/10/25/ancient-names-weigh-on-new-battles-for-first-nations-in-victoria/"],
+        "category": "mountain"
       },
       "geometry": {
         "coordinates": [
-          -123.48947303092481,
-          48.39398592683736
+          -123.32563535338784,
+          48.456788598922316
         ],
         "type": "Point"
       },
-      "id": 18
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "sč̓áyəq",
-        "description": "\"Mouldy beach\" from the algae on rocks here",
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.45105276409771,
-          48.440986411319614
-        ],
-        "type": "Point"
-      },
-      "id": 19
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "ɬəŋálacin",
-        "description": "\"Two pieces [islands] torn apart\"",
-        "settlerName": "Smart and McCarthy Islands"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.44882758323317,
-          48.44734727473028
-        ],
-        "type": "Point"
-      },
-      "id": 20
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "sč̓ílixʷ",
-        "description": "\"Stones with green moss hanging from them\"",
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.45863933228858,
-          48.45557101581238
-        ],
-        "type": "Point"
-      },
-      "id": 21
+      "id": 39
     }
   ]
 }
