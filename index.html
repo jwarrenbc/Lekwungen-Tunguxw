@@ -44,9 +44,9 @@
 <body>
     <div id="map" class="h-full w-full bg-[#333]"></div>
     
-    <div id="info-box" class="absolute top-3 left-12 z-[1000] bg-white rounded-lg shadow-lg text-sm">Loading map...</div>
+    <div id="info-box" class="absolute top-3 left-12 z-[1000] bg-white rounded-lg shadow-lg text-sm py-3 px-4">Loading map...</div>
     
-    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-0 right-0 z-[1000] bg-white shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">ℹ️ X̣čnáxʷ (About)</a>
+    <a href="https://github.com/jwarrenbc/Lekwungen-Tunguxw/#lekwungen-tunguxw" target="_blank" class="absolute top-0 right-0 z-[1000] bg-white shadow-lg text-sm font-medium text-gray-700 hover:bg-gray-50 transition-colors">ℹ️ About</a>
 
     <script>
         const geojsonUrl = 'https://raw.githubusercontent.com/jwarrenbc/Lekwungen-Tunguxw/refs/heads/dev/data/L%C9%99k%CC%93%CA%B7a%C5%8B%C9%99n%20T%C9%99%C5%8B%C9%99x%CA%B7.geojson';
@@ -107,8 +107,8 @@
                         const props = feature.properties;
                         
                         // Safely extract properties
-                        const lekwungenName = props?.name || 'ʔawə x̣əčtíŋ (Not known)';
-                        const settlerName = props?.settlerName || 'ʔawənə (None)';
+                        const lekwungenName = props?.name || 'Not known';
+                        const settlerName = props?.settlerName || 'None';
                         const audioUrl = props?.audio?.src;
                         const audioCopyright = props?.audio?.copyright;
                         const description = props?.description || '';
@@ -121,7 +121,7 @@
                                 <div class="bg-amber-50 rounded-lg p-3 mb-3 border border-amber-100 text-center">
                                     <button onclick="new Audio('${audioUrl}').play()" 
                                             class="bg-yellow-700 hover:bg-yellow-800 text-white text-sm font-bold py-2 px-4 rounded-full inline-flex items-center transition-colors shadow-sm">
-                                        <span class="mr-2 text-lg">▶</span> ʔəléʔnəxʷ (Hear It)
+                                        <span class="mr-2 text-lg">▶</span> Hear It
                                     </button>`;
                                 
                             if (audioCopyright) {
@@ -142,7 +142,7 @@
                             const listItems = sources.map(source => `<li class="mb-1">${source}</li>`).join('');
                             sourcesHtml = `
                                 <div class="mt-4 mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                    <span class="mr-1 text-lg">📚</span> Čsléʔəɬ (Sources)
+                                    <span class="mr-1 text-lg">📚</span> Sources
                                 </div>
                                 <ul class="list-disc pl-5 text-xs text-gray-600 leading-relaxed">
                                     ${listItems}
@@ -169,8 +169,7 @@
                         const popupContent = `
                             <!-- Header -->
                             <div class="bg-[#8C7853] text-white p-4 flex items-start">
-                                <span class="text-2xl mr-3 mt-0.5">📍</span>
-                                <h3 class="text-2xl font-bold leading-tight">${lekwungenName}</h3>
+                                <h3 class="text-2xl font-bold leading-tight">📍 ${lekwungenName}</h3>
                             </div>
                             
                             <!-- Body -->
@@ -183,7 +182,7 @@
 
                                 <!-- Settler Name -->
                                 <div class="mb-1 flex items-center text-xs font-bold text-gray-500 uppercase tracking-wider">
-                                    <span class="mr-1 text-lg">🇬🇧</span> Xʷənítəm Snéʔ (Settler Name)
+                                    🇬🇧 English Name
                                 </div>
                                 <div class="text-base text-gray-800 pl-6 mb-2 font-medium">
                                     ${settlerName}
@@ -193,7 +192,7 @@
                             
                                 <div class="pt-3 mt-4 border-t border-gray-200 flex justify-center space-x-4">
                                     <a href="${shareKnowledgeUrl}" target="_blank">
-                                        Ɬil Sx̣čənə́xʷ (Gift Your Knowledge)
+                                        Gift Your Knowledge
                                     </a>
                                 </div>
                             </div>
