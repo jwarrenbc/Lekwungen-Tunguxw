@@ -103,6 +103,28 @@
                     filter: function(feature, layer) {
                         return !(feature.properties && feature.properties.category === "Douglas Treaties");
                     },
+                    pointToLayer: function(feature, latlng) {
+                        // Map category to emoji
+                        const categoryEmojis = {
+                            'village': '🏘️',
+                            'fishing': '🎣',
+                            'river': '💧',
+                            'default': '📍'
+                        };
+                        
+                        const category = feature.properties?.category || 'default';
+                        const emoji = categoryEmojis[category] || categoryEmojis['default'];
+                        
+                        // Create custom icon with emoji
+                        const icon = L.divIcon({
+                            html: emoji,
+                            className: 'emoji-marker',
+                            iconSize: [30, 30],
+                            iconAnchor: [15, 15]
+                        });
+                        
+                        return L.marker(latlng, { icon: icon });
+                    },
                     onEachFeature: function(feature, layer) {
                         const props = feature.properties;
                         
