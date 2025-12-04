@@ -4,6 +4,275 @@
     {
       "type": "Feature",
       "properties": {
+        "name": "p̓əqáynəŋ",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.27293356172575,
+          48.44480679646526
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əláŋiqən",
+        "settlerName": "Colquitz Creek",
+        "description": "\"Stream that tumbles down\"",
+        "category": "river",
+        "sources": [
+          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.40130137483393,
+          48.4549620506418
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sqəŋínəs",
+        "settler name": "Discovery Island",
+        "description": "Name of the island and the people who lived there."
+      },
+      "geometry": {
+        "coordinates": [
+          -123.23768277859314,
+          48.42602374878135
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "k̓ʷəc̓áyč",
+        "settlerName": "Gordon Head"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30727570829178,
+          48.496302002552795
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ʷəʔálx̣ʷələq̓ʷ",
+        "settlerName": "Elk Lake",
+        "description": "\"Drifting along\", named for the island",
+        "category": "river"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.39677394770352,
+          48.52987286357714
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "skʷəhán̓ə",
+        "settlerName": "Andrew's Bay"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.16243239166322,
+          48.549418797339115
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷakʷáylačəts",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.24181832444724,
+          48.432627412040944
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ɬléɬlayakʷ",
+        "settlerName": "Great Chain Island",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.2755083210367,
+          48.42074639414878
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "skʷəhán̓ə",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.2933673976782,
+          48.42737089859699
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sŋéqəʔ",
+        "settlerName": "Cadboro Bay",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29416518352039,
+          48.45916814147685
+        ],
+        "type": "Point"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sc̓sn̓áʔəŋ",
+        "settlerName": "Chatham Island"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.24902186403415,
+          48.43669044237723
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ƛ̓ápas",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.25478239320476,
+          48.43867532835833
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "škʷəkáyqals",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.25458725703967,
+          48.44143331095751
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qáx̣ələŋ",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29277546815138,
+          48.44409852642548
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷəstéw̓əč",
+        "description": "\"Beach exposed to the weather\"",
+        "settlerName": "Cadboro Bay",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3642874158599,
+          48.514067123929465
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ə́w̓əŋə́qsən",
+        "description": "\"Point of cracking sea urchins\"",
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.26861155149513,
+          48.45543546252031
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pq̓aal̓s",
+        "sources": [
+          "Clancy, Dustin. “Ancient Names Weigh on New Battles for First Nations in Victoria.” Victoria News, 25 Oct. 2013, https://vicnews.com/2013/10/25/ancient-names-weigh-on-new-battles-for-first-nations-in-victoria/",
+        ],
+        "category": "mountain"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.32563535338784,
+          48.456788598922316
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "xʷsépsəm",
         "description": "\"Little neck\"",
         "category": "village",
@@ -58,25 +327,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "x̣əláŋiqən",
-        "settlerName": "Colquitz Creek",
-        "description": "\"Stream that tumbles down\"",
-        "category": "river",
-        "sources": [
-          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.40130137483393,
-          48.4549620506418
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "qállə",
         "description": "\"Spring water gushing down the beach\"",
         "category": "village"
@@ -85,21 +335,6 @@
         "coordinates": [
           -123.43034716979454,
           48.444696031347604
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "sqəŋínəs",
-        "settler name": "Discovery Island",
-        "description": "Name of the island and the people who lived there."
-      },
-      "geometry": {
-        "coordinates": [
-          -123.23768277859314,
-          48.42602374878135
         ],
         "type": "Point"
       }
@@ -346,21 +581,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "sc̓sn̓áʔəŋ",
-        "settlerName": "Chatham Island"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.24902186403415,
-          48.43669044237723
-        ],
-        "type": "Point"
-      },
-      "id": 22
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
         "description": "These are the borders of the Swengwhung Tribe Treaty of 1850, which is part of the Douglas Treaties. The traditional territory of the Sxʷéŋxʷəŋ family likely extended further towards q̓əm̓ásəŋ in the north and may not have included some of the southwest area (Duff, 1969).",
         "sources": [
@@ -578,115 +798,6 @@
         ],
         "type": "Point"
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "ƛ̓ápas",
-        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.25478239320476,
-          48.43867532835833
-        ],
-        "type": "Point"
-      },
-      "id": 33
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "škʷəkáyqals",
-        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.25458725703967,
-          48.44143331095751
-        ],
-        "type": "Point"
-      },
-      "id": 34
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "p̓əqáynəŋ",
-        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.27293356172575,
-          48.44480679646526
-        ],
-        "type": "Point"
-      },
-      "id": 35
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "qáx̣ələŋ",
-        "sources": ["Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."]
-      },
-      "geometry": {
-        "coordinates": [
-          -123.29277546815138,
-          48.44409852642548
-        ],
-        "type": "Point"
-      },
-      "id": 36
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "kʷəstéw̓əč",
-        "description": "\"Beach exposed to the weather\"",
-        "settlerName": "Cadboro Bay",
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.29645570115574,
-          48.458547574551886
-        ],
-        "type": "Point"
-      },
-      "id": 37
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "x̣ə́w̓əŋə́qsən",
-        "description": "\"Point of cracking sea urchins\"",
-        "category": "village"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.26861155149513,
-          48.45543546252031
-        ],
-        "type": "Point"
-      },
-      "id": 38
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "pq̓aal̓s",
-        "sources": ["Clancy, Dustin. \"Ancient Names Weigh on New Battles for First Nations in Victoria.\" Victoria News, 25 Oct. 2013, https://vicnews.com/2013/10/25/ancient-names-weigh-on-new-battles-for-first-nations-in-victoria/"],
-        "category": "mountain"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.32563535338784,
-          48.456788598922316
-        ],
-        "type": "Point"
-      },
-      "id": 39
     }
   ]
 }
