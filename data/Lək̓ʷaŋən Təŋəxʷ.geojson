@@ -4,60 +4,708 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sxʷéŋxʷəŋ Təŋəxʷ",
-        "description": "These are the borders of the Swengwhung Tribe Treaty of 1850, which is part of the Douglas Treaties. The traditional territory of the Sxʷéŋxʷəŋ family likely extended further towards q̓əm̓ásəŋ in the north and may not have included some of the southwest area (Duff, 1969).",
+        "name": "p̓əqáynəŋ",
         "sources": [
-          "\"Swengwhung Tribe Treaty.\" The Fort Victoria and Other Vancouver Island Treaties 1850-1854, 13 April 1850.",
-          "Lutz, John Sutton. Makuk: A new history of Aboriginal-white relations. UBC Press, 2009.",
-          "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
-        ]
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%CC%93%C9%99q%C3%A1yn%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
-          [
-            [
-              -123.3369089,
-              48.4092248
-            ],
-            [
-              -123.3484457,
-              48.4318801
-            ],
-            [
-              -123.3675255,
-              48.4636393
-            ],
-            [
-              -123.3815087,
-              48.439465
-            ],
-            [
-              -123.3937732,
-              48.4181476
-            ],
-            [
-              -123.37689957048777,
-              48.408825626619404
-            ],
-            [
-              -123.34877877727511,
-              48.4026610370347
-            ],
-            [
-              -123.3369089,
-              48.4092248
-            ]
-          ]
+          -123.27293356172575,
+          48.44480679646526
         ],
-        "type": "Polygon"
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əláŋiqən",
+        "settlerName": "Colquitz Creek",
+        "description": "\"Stream that tumbles down\"",
+        "category": "river",
+        "sources": [
+          "Elliott, Dave. *Saltwater People*. Revised ed., edited by Janet Poth, School District No. 63 (Saanich), 1990."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%C9%99l%C3%A1%C5%8Biq%C9%99n.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.40130137483393,
+          48.4549620506418
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sqəŋínəs",
+        "settler name": "Discovery Island",
+        "description": "Name of the island and the people who lived there.",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/sq%C9%99%C5%8B%C3%ADn%C9%99s.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.23768277859314,
+          48.42602374878135
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "k̓ʷəc̓áyč",
+        "settlerName": "Gordon Head",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/k%CC%93%CA%B7%C9%99c%CC%93%C3%A1y%C4%8D.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30727570829178,
+          48.496302002552795
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ʷəʔálx̣ʷələq̓ʷ",
+        "settlerName": "Elk Lake",
+        "description": "\"Drifting along\", named for the island",
+        "category": "river",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%CA%B7%C9%99%CA%94%C3%A1lx%CC%A3%CA%B7%C9%99l%C9%99q%CC%93%CA%B7.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.39677394770352,
+          48.52987286357714
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷakʷáylačəts",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/k%CA%B7ak%CA%B7%C3%A1yla%C4%8D%C9%99ts.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.24181832444724,
+          48.432627412040944
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ɬléɬlayakʷ",
+        "settlerName": "Great Chain Island",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C9%ACl%C3%A9%C9%AClayak%CA%B7.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.2755083210367,
+          48.42074639414878
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "skʷəhán̓ə",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/sk%CA%B7%C9%99h%C3%A1n%CC%93%C9%99.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.2933673976782,
+          48.42737089859699
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sŋéqəʔ",
+        "settlerName": "Cadboro Bay",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/s%C5%8B%C3%A9q%C9%99%CA%94.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29416518352039,
+          48.45916814147685
+        ],
+        "type": "Point"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sc̓sn̓áʔəŋ",
+        "settlerName": "Chatham Island",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/sc%CC%93sn%CC%93%C3%A1%CA%94%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.24902186403415,
+          48.43669044237723
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ƛ̓ápas",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C6%9B%CC%93%C3%A1pas.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.25478239320476,
+          48.43867532835833
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "škʷəkáyqals",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1k%CA%B7%C9%99k%C3%A1yqals.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.25458725703967,
+          48.44143331095751
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qáx̣ələŋ",
+        "sources": [
+          "Keddie, Grant R. Songhees Pictorial: A History of the Songhees People as Seen by Outsiders, 1790–1912. Royal British Columbia Museum, 2003."
+        ],
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/q%C3%A1x%CC%A3%C9%99l%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29277546815138,
+          48.44409852642548
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷəstéw̓əč",
+        "description": "\"Beach exposed to the weather\"",
+        "settlerName": "Cordova Bay",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/k%CA%B7%C9%99st%C3%A9w%CC%93%C9%99%C4%8D.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3642874158599,
+          48.514067123929465
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ə́w̓əŋə́qsən",
+        "description": "\"Point of cracking sea urchins\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%C9%99%CC%81w%CC%93%C9%99%C5%8B%C9%99%CC%81qs%C9%99n.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.26861155149513,
+          48.45543546252031
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pq̓aal̓s",
+        "sources": [
+          "Clancy, Dustin. “Ancient Names Weigh on New Battles for First Nations in Victoria.” Victoria News, 25 Oct. 2013, https://vicnews.com/2013/10/25/ancient-names-weigh-on-new-battles-for-first-nations-in-victoria/"
+        ],
+        "category": "mountain",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/pq%CC%93aal%CC%93s.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.32563535338784,
+          48.456788598922316
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "xʷsépsəm",
+        "description": "\"Little neck\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9ps%C9%99m.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.42186777657514,
+          48.45264182675086
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "šč̓aaɬ",
+        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1%C4%8D%CC%93aa%C9%AC.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43170020192824,
+          48.451490326752435
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "pəl̓qʷíc̓əŋ",
+        "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
+        "settlerName": "Craigflower Creek",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/p%C9%99l%CC%93q%CA%B7%C3%ADc%CC%93%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        },
+        "category": "river"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43606588276239,
+          48.45897959610045
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "qállə",
+        "description": "\"Spring water gushing down the beach\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/q%C3%A1ll%C9%99.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43034716979454,
+          48.444696031347604
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "míqən",
+        "description": "\"Warmed by the sun\"",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/m%C3%ADq%C9%99n.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.36483300513848,
+          48.409127438148914
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "description": "Šƛ̓eʔləm̓ (Klallam) and Xʷsépsəm village from 1847 - 1855",
+        "sources": [
+          "Keddie, Grant. \"The Victoria Legislative Building Properties and Indigenous Peoples.\" *Grant Keddie*, 21 Feb. 2023, grantkeddie.com/2023/02/the-victoria-legislative-building-properties-and-indigenous-peoples/. Accessed 26 Nov. 2025."
+        ],
+        "category": "village"
+      },
+      "geometry": {
+        "coordinates": [
+          -123.37548474388473,
+          48.4228284097548
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sc̓áŋəs",
+        "settlerName": "Albert Head Lagoon",
+        "description": "Origin of the anglicized word \"Songhees\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/sc%CC%93%C3%A1%C5%8B%C9%99s.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.48947303092481,
+          48.39398592683736
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓áyəq",
+        "description": "\"Mouldy beach\" from the algae on rocks here",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/s%C4%8D%CC%93%C3%A1y%C9%99q.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45105276409771,
+          48.440986411319614
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ɬəŋálacin",
+        "description": "\"Two pieces [islands] torn apart\"",
+        "settlerName": "Smart and McCarthy Islands",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C9%AC%C9%99%C5%8B%C3%A1lacin.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.44882758323317,
+          48.44734727473028
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sč̓ílixʷ",
+        "description": "\"Stones with green moss hanging from them\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/s%C4%8D%CC%93%C3%ADlix%CA%B7.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.45863933228858,
+          48.45557101581238
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "šx̣ʷiméɬəɬ",
+        "settlerName": "Esquimalt",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1x%CC%A3%CA%B7im%C3%A9%C9%AC%C9%99%C9%AC.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43243815933889,
+          48.43064777349235
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "stqéyəʔelə",
+        "description": "\"Wolf den\" from stqéyeʔ = \"wolf\"",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/stq%C3%A9y%C9%99%CA%94el%C9%99.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.43341367783185,
+          48.44184006109103
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "xʷəxʷačqə̓in",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7%C9%99x%CA%B7a%C4%8Dq%C9%99%CC%93in.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3524330229837,
+          48.406203157325336
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣ʷəléyɬč",
+        "description": "From x̣ʷəléʔəɬč = \"willow tree\"",
+        "settlerName": "Ross Bay",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%CA%B7%C9%99l%C3%A9y%C9%AC%C4%8D.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.34891430039806,
+          48.4067641833789
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "saʔsyəməʔ",
+        "description": "From sayəmən = \"harpoon\"",
+        "settlerName": "Harling Point",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/sa%CA%94sy%C9%99m%C9%99%CA%94.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.32307226201333,
+          48.406766245624
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ƛ̓ikʷeʔnəŋ",
+        "description": "From ƛ̓ik̓ʷən = \"pea\" for the Lathyrus japonicus that grow here",
+        "settlerName": "Trial Island",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C6%9B%CC%93ik%CA%B7e%CA%94n%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30557267490016,
+          48.39766925142726
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x̣əx̣íʔləx̣",
+        "description": "\"Place of War\", from sx̣éləx̣ = \"war\"",
+        "settlerName": "Gonzales Point",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%C9%99x%CC%A3%C3%AD%CA%94l%C9%99x%CC%A3.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29616323853398,
+          48.41249688638348
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "špxʷəŋ",
+        "description": "\"Flying dust\"",
+        "settlerName": "Oak Bay",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/%C5%A1px%CA%B7%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.30435946126417,
+          48.42402786484692
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kʷəw̓xʷičəlaʔ",
+        "settlerName": "Mary Tod Island",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/k%CA%B7%C9%99w%CC%93x%CA%B7i%C4%8D%C9%99la%CA%94.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.29901121996323,
+          48.42794626849292
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "sčíčnəɬ",
+        "category": "village",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/s%C4%8D%C3%AD%C4%8Dn%C9%99%C9%AC.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
+      },
+      "geometry": {
+        "coordinates": [
+          -123.3021826567523,
+          48.43634944031396
+        ],
+        "type": "Point"
       }
     },
     {
       "type": "Feature",
       "properties": {
         "name": "xʷséy̓q̓əm",
-        "settler name": "James Bay",
+        "settlerName": "James Bay",
         "description": "Place of Clay, from séy̓əq̓ = clay",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CA%B7s%C3%A9y%CC%93q%CC%93%C9%99m.mp3",
+          "copyright": "©2025 Jared Warren"
+        },
         "sources": [
           "Duff, Wilson. \"The Fort Victoria Treaties.\" BC Studies: The British Columbian Quarterly 3 (1969): 3-57."
         ]
@@ -74,7 +722,11 @@
       "type": "Feature",
       "properties": {
         "name": "q̓əm̓ásəŋ",
-        "settler name": "Tillicum Narrows"
+        "settlerName": "Tillicum Narrows",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/q%CC%93%C9%99m%CC%93%C3%A1s%C9%99%C5%8B.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
@@ -83,36 +735,6 @@
         ],
         "type": "Point"
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "xʷsépsəm",
-        "description": "\"Little neck\""
-      },
-      "geometry": {
-        "coordinates": [
-          -123.42186777657514,
-          48.45264182675086
-        ],
-        "type": "Point"
-      },
-      "id": 3
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "šč̓aaɬ",
-        "description": "\"Drag over a narrow place\" (portage), possible onomatopoeia"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.43170020192824,
-          48.451490326752435
-        ],
-        "type": "Point"
-      },
-      "id": 4
     },
     {
       "type": "Feature",
@@ -160,6 +782,7 @@
       "properties": {
         "name": "mək̓ʷəqs",
         "description": "Reef net site",
+        "category": "fishing",
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/m%C9%99k%CC%93%CA%B7%C9%99qs.mp3",
           "copyright": "©2025 Jared Warren"
@@ -180,41 +803,7 @@
       "type": "Feature",
       "properties": {
         "name": null,
-        "settler name": "\"The Bay immediately east of Clover Point\"",
-        "sources": [
-          "https://www.rcaanc-cirnac.gc.ca/eng/1100100029052/1581515763202#sweng"
-        ],
-        "category": "Douglas Treaties"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.3366575,
-          48.408738
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": null,
-        "settler name": "\"Fountain Ridge\"",
-        "sources": null,
-        "category": "Douglas Treaties"
-      },
-      "geometry": {
-        "coordinates": [
-          -123.3484999,
-          48.4314963
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": null,
-        "settler name": "Island of the Dead (Halkett Island)",
+        "settlerName": "Island of the Dead (Halkett Island)",
         "sources": null
       },
       "geometry": {
@@ -228,12 +817,16 @@
     {
       "type": "Feature",
       "properties": {
-        "name": null,
-        "settler name": "\"The head of the...Inlet of Camoson\"",
+        "name": "sč̓əmásən",
+        "settlerName": "\"The head of the...Inlet of Camoson\"",
         "sources": [
           "https://fishing-app.gpsnauticalcharts.com/"
         ],
-        "category": "Douglas Treaties"
+        "category": "Douglas Treaties",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/s%C4%8D%CC%93%C9%99m%C3%A1s%C9%99n.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
@@ -246,18 +839,21 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "pəl̓qʷíc̓əŋ",
-        "description": "\"Place of Ghosts\", from spəl̓qʷíc̓əʔ = ghost",
-        "settler name": "Craigflower Creek"
+        "name": "x̣ə́šən̓ x̣áčəʔ",
+        "description": "Niɬ šxʷəw̓al̓čəs kʷs qəléʔqən tiʔe.",
+        "audio": {
+          "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%C9%99%CC%81%C5%A1%C9%99n%CC%93%20x%CC%A3%C3%A1%C4%8D%C9%99%CA%94.mp3",
+          "copyright": "©2025 Jared Warren"
+        }
       },
       "geometry": {
         "coordinates": [
-          -123.43606588276239,
-          48.45897959610045
+          -123.35233880240935,
+          48.444915006822555
         ],
         "type": "Point"
       },
-      "id": 13
+      "id": 47
     }
   ]
 }
