@@ -310,7 +310,8 @@
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/pq%CC%93aal%CC%93s.mp3",
           "copyright": "©2025 Jared Warren"
-        }
+        },
+        "settlerName": "Mount Tolmie"
       },
       "geometry": {
         "coordinates": [
@@ -844,7 +845,8 @@
         "audio": {
           "src": "https://github.com/jwarrenbc/Lekwungen-Tunguxw/raw/refs/heads/main/data/x%CC%A3%C9%99%CC%81%C5%A1%C9%99n%CC%93%20x%CC%A3%C3%A1%C4%8D%C9%99%CA%94.mp3",
           "copyright": "©2025 Jared Warren"
-        }
+        },
+        "category": "river"
       },
       "geometry": {
         "coordinates": [
