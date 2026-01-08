@@ -2,7 +2,11 @@
 
 Map of Lək̓ʷáŋən place names assembled by Jared Warren of the Xʷsépsəm (Esquimalt) Nation. Everyone is welcome to learn and use these Lək̓ʷáŋən words, First Nations and settlers alike.
 
-Primary sources were the personal recollections of Čeyɫəm (Dr. Elmer George), recorded by Andrew Cienski, and the [First Voices site for Xʷsépsəm Lək̓ʷáŋən](https://www.firstvoices.com/lekwungen). Additional sources are noted on individual features.
+Primary sources:
+- Knowledge of Sophie Misheal, originally recorded in Mitchell, Marjorie Ruth. [*A Dictionary of Songish*](https://dspace.library.uvic.ca/items/e17a9571-6c1b-41d7-83db-80e717c71193). 1968, and retranscribed in Montler, Timothy. *A Dictionary of Lekwungen*. upodn Books, 9 Mar. 2024.
+- Knowledge of Čeyɫəm (Dr. Elmer George), recorded by Andrew Cienski and published on the [First Voices site for Xʷsépsəm Lək̓ʷáŋən](https://www.firstvoices.com/lekwungen).
+- Knowledge of Sophie Misheal and Edward Williams recorded in Keddie, Grant R. *Songhees Pictorial*. Royal British Columbia Museum, 2003.
+- Additional sources are noted on individual features.
 
 This map is a continual work in progress. Additions and corrections are very welcome, either as pull requests to this repository if you have the technical skills to do that, or by [submitting this form](https://docs.google.com/forms/d/e/1FAIpQLSfldIttf1uNJy_MBc_3L6IYD70ILZ8ez_Wd-ZT39tuFEX3bIg/viewform).
 
